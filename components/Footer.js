@@ -192,10 +192,10 @@ const Footer = () => {
             </div>
 
             <div className="md:text-4xl text-xl my-4 flex items-start justify-start gap-4">
-              <i class="ri-facebook-box-line"></i>
-              <i class="ri-twitter-x-line"></i>
-              <i class="ri-linkedin-box-fill"></i>
-              <i class="ri-youtube-fill"></i>
+              <i className="ri-facebook-box-line"></i>
+              <i className="ri-twitter-x-line"></i>
+              <i className="ri-linkedin-box-fill"></i>
+              <i className="ri-youtube-fill"></i>
             </div>
           </div>
         </motion.div>
