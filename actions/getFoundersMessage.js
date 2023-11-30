@@ -4,6 +4,7 @@ export const getFoundersMessage = async () => {
   const query = `*[_type == 'founder']{
         name,
         message,
+        position,
         description,
         short_description,
         numberOfHomesDelivered,
@@ -18,5 +19,5 @@ export const getFoundersMessage = async () => {
     }`;
 
   const data = await sanityClient.fetch(query);
-  return data[0];
+  return data;
 };
