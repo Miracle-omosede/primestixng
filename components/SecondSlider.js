@@ -27,7 +27,7 @@ import Recents from "./Recents";
 import { getLatestFeatured } from "@/actions/getLatestFeatured";
 import { formatLocation } from "@/lib/helpers";
 
-export default function Slider() {
+const SecondSlider = () => {
   const progressCircle = useRef(null);
   const progressContent = useRef(null);
   const onAutoplayTimeLeft = (s, time, progress) => {
@@ -215,4 +215,6 @@ export default function Slider() {
       )}
     </>
   );
-}
+};
+
+export default SecondSlider;
