@@ -170,7 +170,7 @@ const Footer = () => {
                 />
                 <button
                   onClick={handleSendNewsletter}
-                  class="flex items-center justify-center px-4 border-l"
+                  className="flex items-center justify-center px-4 border-l"
                   disabled={email === "" || email.length === 0}
                 >
                   <svg

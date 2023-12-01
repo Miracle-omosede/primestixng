@@ -5,11 +5,11 @@ import Image from "next/image";
 import { getFoundersMessage } from "@/actions/getFoundersMessage";
 
 const Founder = () => {
-  const [founder, setFounder] = useState([]);
+  const [founders, setFounder] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    const fetchFounderMessage = async () => {
+    const fetchFoundersMessage = async () => {
       try {
         setIsLoading(true);
         const data = await getFoundersMessage();
@@ -22,7 +22,7 @@ const Founder = () => {
       }
     };
 
-    fetchFounderMessage();
+    fetchFoundersMessage();
   }, []);
 
   return (
@@ -42,40 +42,44 @@ const Founder = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col font-raleway max-w-[1100px] md:mt-20 w-full mx-auto md:py-20 relative">
-              <div className="grid grid-cols-12 md:gap-7">
-                <div className="md:col-span-4 col-span-12">
-                  <Image
-                    className="w-[300px] relative md:absolute object-cover md:-top-[20%] left-0 h-[400px]"
-                    src={founder?.image?.asset?.url}
-                    width={500}
-                    height={500}
-                    alt=""
-                  />
-                </div>
-                <div className="md:col-span-8 col-span-12 text-black">
-                  <div>
-                    <p className="mt-10 mb-5 pb-10  px-5 md:px-0 text-xl md:text-3xl font-semibold relative">
-                      {founder?.short_description}
-                    </p>
+            {founders.map((founder) => (
+              <div key={founder?._id}>
+                <div className="flex flex-col font-raleway max-w-[1100px] md:mt-20 w-full mx-auto md:py-20 relative">
+                  <div className="grid grid-cols-12 md:gap-7">
+                    <div className="md:col-span-4 col-span-12">
+                      <Image
+                        className="w-[300px] relative md:absolute object-cover md:-top-[20%] left-0 h-[400px]"
+                        src={founder?.image?.asset?.url}
+                        width={500}
+                        height={500}
+                        alt=""
+                      />
+                    </div>
+                    <div className="md:col-span-8 col-span-12 text-black">
+                      <div>
+                        <p className="mt-10 mb-5 pb-10  px-5 md:px-0 text-xl md:text-3xl font-semibold relative">
+                          {founder?.short_description}
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
+                <div className="flex flex-col font-raleway max-w-[1100px] w-full px-5 md:px-0 mx-auto py-5 font-[400] pb-5 md:pb-20 text-xl text-md leading-8">
+                  <p>
+                    <br />
+                    {founder?.message}
+                    <br />
+                    <span className="text-slate-600 italic font-bold">
+                      {founder?.name}
+                    </span>
+                    <br />
+                    <span className="text-slate-500 font-bold">
+                      {founder?.position}
+                    </span>
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="flex flex-col font-raleway max-w-[1100px] w-full px-5 md:px-0 mx-auto py-5 font-[400] pb-5 md:pb-20 text-xl text-md leading-8">
-              <p>
-                <br />
-                {founder?.message}
-                <br />
-                <span className="text-slate-600 italic font-bold">
-                  {founder?.name}
-                </span>
-                <br/>
-                <span className="text-slate-500 font-bold">
-                  Founder
-                </span>
-              </p>
-            </div>
+            ))}
           </div>
         </>
       )}

@@ -6,9 +6,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import Link from "next/link";
 import "../styles/main.scss";
 
-import { textVariant, staggerContainer, fadeIn, planetVariants } from '../utils/motion';
+import {
+  textVariant,
+  staggerContainer,
+  fadeIn,
+  planetVariants,
+} from "../utils/motion";
 
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 
 // Import Swiper styles
 import "swiper/css";
@@ -44,13 +49,31 @@ export default function Slider() {
   return (
     <>
       {features && (
-        <motion.div variants={staggerContainer} initial="hidden" whileInView="show" viewport={{ once: false, amount: 0.25}}  className="flex flex-col items-center justify-ceneter mx-auto md:w-[1100px] h-full mb-5">
-          <motion.div variants={staggerContainer} initial="hidden" whileInView="show" viewport={{ once: false, amount: 0.25}} className=" mx-auto px-5 uppercase four alt-four mb-3">
-            <motion.h1  variants={textVariant(1.1)}className="second-heading font-bold font-raleway uppercase leading-[3rem]">
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.25 }}
+          className="flex flex-col items-center justify-ceneter mx-auto md:w-[1100px] h-full mb-5"
+        >
+          <motion.div
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.25 }}
+            className=" mx-auto px-5 uppercase four alt-four mb-3"
+          >
+            <motion.h1
+              variants={textVariant(1.1)}
+              className="second-heading font-bold font-raleway uppercase leading-[3rem]"
+            >
               Featured Housing
             </motion.h1>
           </motion.div>
-          <motion.span variants={textVariant(1.2)} className="capitalize text-white my-5 font-semibold text-center text-xl font-raleway px-4 md:px-32">
+          <motion.span
+            variants={textVariant(1.2)}
+            className="capitalize text-white my-5 font-semibold text-center text-xl font-raleway px-4 md:px-32"
+          >
             {features[0]?.description}
           </motion.span>
           <Swiper
@@ -71,17 +94,22 @@ export default function Slider() {
           >
             {features.map((feature) => (
               <SwiperSlide key={feature.id}>
-                <motion.div variants={staggerContainer}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}>
+                <motion.div
+                  variants={staggerContainer}
+                  initial="hidden"
+                  whileInView="show"
+                  viewport={{ once: false, amount: 0.25 }}
+                >
                   <Image
                     src={feature?.bannerImage?.asset?.url}
                     className="object-cover absolute top-0 left-0"
                     layout="fill"
                     alt=""
                   />
-                  <motion.div variants={planetVariants('left')} className="glass-bg2  absolute py-3 my-5 mx-5 px-5 top-0 right-0 text-white rounded-[50px]">
+                  <motion.div
+                    variants={planetVariants("left")}
+                    className="glass-bg2  absolute py-3 my-5 mx-5 px-5 top-0 right-0 text-white rounded-[50px]"
+                  >
                     <Link
                       href="/projects"
                       className="flex items-center justify-between gap-3"
@@ -98,12 +126,24 @@ export default function Slider() {
                     </Link>
                   </motion.div>
                   <div className="absolute left-0 flex w-full items-end justify-start bottom-0 py-5 md:py-10 my-auto px-16 md:h-40 glass-bg2 text-white">
-                    <div className="flex justify-between gap-3 md:text-center text-left md:gap-0 flex-col w-full " >
-                      <motion.div className="font-raleway flex flex-col gap-2 items-start justify-between" variants={staggerContainer} initial="hidden" whileInView="show" viewport={{ once: false, amount: 0.25}}>
-                        <motion.span variants={textVariant(1.1)} className="font-bold md:text-4xl text-2xl capitalize">
+                    <div className="flex justify-between gap-3 md:text-center text-left md:gap-0 flex-col w-full ">
+                      <motion.div
+                        className="font-raleway flex flex-col gap-2 items-start justify-between"
+                        variants={staggerContainer}
+                        initial="hidden"
+                        whileInView="show"
+                        viewport={{ once: false, amount: 0.25 }}
+                      >
+                        <motion.span
+                          variants={textVariant(1.1)}
+                          className="font-bold md:text-4xl text-2xl capitalize"
+                        >
                           {feature?.name}
                         </motion.span>
-                        <motion.span variants={textVariant(1.2)} className="capitalize gap-2 flex items-center justify-center md:text-xl text-md font-semibold">
+                        <motion.span
+                          variants={textVariant(1.2)}
+                          className="capitalize gap-2 flex items-center justify-center md:text-xl text-md font-semibold"
+                        >
                           <span className="hidden md:flex">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
@@ -126,7 +166,10 @@ export default function Slider() {
                             </svg>
                           </span>
                           <motion.span variants={textVariant(1.3)}>
-                            {formatLocation(feature?.city?.name, feature?.country?.name)}
+                            {formatLocation(
+                              feature?.city?.name,
+                              feature?.country?.name
+                            )}
                           </motion.span>
                         </motion.span>
                       </motion.div>
