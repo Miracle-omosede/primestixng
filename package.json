@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^3.3.2",
+    "@material-tailwind/react": "^2.1.5",
     "@sanity/client": "^6.8.0",
     "@sanity/image-url": "^1.0.2",
     "axios": "^1.6.2",
