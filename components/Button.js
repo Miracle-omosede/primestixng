@@ -1,11 +1,11 @@
 import React from "react";
 import Link from "next/link";
 
-const Button = () => {
+const Button = ({className}) => {
   return (
     <Link
       href="/projects"
-      className="hero-btn md:w-auto text-xs md:text-sm flex items-center"
+      className={`hero-btn md:w-auto text-xs md:text-sm flex items-center ${className}`}
     >
       <span className="capitalize text-sm">Learn more</span>
       &nbsp; &nbsp;

@@ -1,5 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
+const withMT = require("@material-tailwind/react/utils/withMT");
+
 const plugin = require("tailwindcss/plugin");
 
 const Myclass = plugin(function ({ addUtilities }) {
@@ -19,19 +21,19 @@ const Myclass = plugin(function ({ addUtilities }) {
   });
 });
 
-module.exports = {
+module.exports = withMT({
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       fontFamily: {
-        raleway: ['Raleway', "sans-serif"],
-        opensans: ['Open Sans', 'sans-serif']
-      }
+        raleway: ["Raleway", "sans-serif"],
+        opensans: ["Open Sans", "sans-serif"],
+      },
     },
   },
   plugins: [Myclass],
-}
+});
