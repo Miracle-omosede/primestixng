@@ -13,30 +13,24 @@ import Image from "next/image";
 
 import { IoVolumeMute } from "react-icons/io5";
 import { IoVolumeHighSharp } from "react-icons/io5";
-{
-  /* <IoVolumeMute /> */
-}
-{
-  /* <IoVolumeHighSharp /> */
-}
 
 export default function Home() {
   const [hasPreloader, sethasPreloader] = useState(true);
   const [videoLoaded, setVideoLoaded] = useState(false);
-  const [videoIsMuted, setVideoIsMuted] = useState(false);
+  const [videoIsMuted, setVideoIsMuted] = useState(true);
 
   const videoRef = useRef();
 
-  const toggleMuteVideo = () => {};
-
   useEffect(() => {
+    // setVideoLoaded(true);
     const videoLoadingTimeout = setTimeout(() => {
       setVideoLoaded(true);
-    }, 1000);
+    }, 5000);
 
     // Simulating preloader delay for 10 seconds
     const preloaderTimeout = setTimeout(() => {
-      sethasPreloader(false);
+      // sethasPreloader(false);
+      console.log("Done");
       setVideoIsMuted(true);
       clearTimeout(videoLoadingTimeout);
     }, 10000);
@@ -46,6 +40,24 @@ export default function Home() {
       clearTimeout(preloaderTimeout);
     };
   }, []);
+  // Add this useEffect to start playing the video when it's loaded
+
+  const toggleMute = () => {
+    if (videoRef.current.muted) {
+      setVideoIsMuted(false);
+      videoRef.current.muted = false;
+    } else {
+      setVideoIsMuted(true);
+      videoRef.current.muted = true;
+    }
+  };
+
+  const exitPreloader = () => {
+    sethasPreloader(false);
+    setVideoIsMuted(true);
+    setVideoIsMuted(true);
+    videoRef.current.muted = true;
+  };
 
   return (
     <ThemeProvider>
@@ -69,10 +81,7 @@ export default function Home() {
               </div>
             )}
             <div
-              onClick={() => {
-                sethasPreloader(false);
-                setVideoIsMuted(true);
-              }}
+              onClick={exitPreloader}
               className="border-white border-[0.5px] text-white w-36 h-10 flex items-center justify-center 
             absolute z-30 left-[50%] -translate-x-[50%] bottom-5 rounded-2xl cursor-pointer text-sm"
             >
@@ -80,7 +89,7 @@ export default function Home() {
             </div>
             {/* Volume */}
             <div
-              onClick={() => setVideoIsMuted((prev) => !prev)}
+              onClick={toggleMute}
               className="absolute top-5 left-5 border-white cursor-pointer border rounded-full h-9 w-9 flex items-center justify-center z-50"
             >
               {videoIsMuted ? (
@@ -91,16 +100,16 @@ export default function Home() {
             </div>
           </div>
           <video
-            muted={videoIsMuted}
-            autoPlay
+            muted
+            ref={videoRef}
+            autoPlay={true}
+            controls={false}
             loop
             className={`w-full h-full object-cover ${
               videoLoaded ? "visible" : "hidden"
             }`}
-            onLoadedMetadata={() => console.log("Video metadata loaded")}
-            onCanPlay={() => console.log("Video can play")}
-            onError={(e) => console.error("Video error:", e)}
           >
+            {/* https://res.cloudinary.com/dulduri72/video/upload/v1701495630/lwkvp4gkn7sgvt59vyeg.mp4 */}
             <source
               src="https://res.cloudinary.com/dulduri72/video/upload/v1701495630/lwkvp4gkn7sgvt59vyeg.mp4"
               type="video/mp4"
