@@ -30,25 +30,17 @@ import { getLatestFeatured } from "@/actions/getLatestFeatured";
 import { formatLocation } from "@/lib/helpers";
 import { getAllCommunityProjects } from "@/actions/getAllProjectsInCommunity";
 
-const EachProjectForCommunitySlider = ({ communityId, index }) => {
-  const [projects, setProjects] = useState([]);
-
+const EachProjectSlider = ({ project, index }) => {
+  // Please check why the progress Circle is not working
   const progressCircle = useRef(null);
   const progressContent = useRef(null);
+
   const onAutoplayTimeLeft = (s, time, progress) => {
     progressCircle.current.style.setProperty("--progress", 1 - progress);
     progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
   };
 
-  useEffect(() => {
-    const AllProjectsInCommunity = async () => {
-      const allProjects = await getAllCommunityProjects(communityId);
-      setProjects(allProjects);
-    };
-    AllProjectsInCommunity();
-  }, [communityId]);
-
-  console.log(projects);
+  console.log(project?.gallery);
 
   return (
     <motion.div
@@ -59,7 +51,7 @@ const EachProjectForCommunitySlider = ({ communityId, index }) => {
           : "col-span-12 md:col-span-6"
       }`}
     >
-      {projects.length > 0 && (
+      {project?.gallery?.length > 0 && (
         <Swiper
           spaceBetween={30}
           centeredSlides={true}
@@ -76,8 +68,8 @@ const EachProjectForCommunitySlider = ({ communityId, index }) => {
           modules={[EffectFade, Autoplay, Pagination, Navigation]}
           className="mySwiper"
         >
-          {projects.map((project) => (
-            <SwiperSlide key={project._id}>
+          {project?.gallery?.map((projectGalleryImage, i) => (
+            <SwiperSlide key={i}>
               <motion.div
                 variants={staggerContainer}
                 initial="hidden"
@@ -85,14 +77,12 @@ const EachProjectForCommunitySlider = ({ communityId, index }) => {
                 viewport={{ once: false, amount: 0.25 }}
               >
                 <Image
-                  src={project?.bannerImage?.asset?.url}
+                  src={projectGalleryImage?.imageUrl?.asset?.url}
                   className="object-cover absolute top-0 left-0"
                   layout="fill"
                   alt=""
                 />
-                <div
-                  className="glass-bg2  absolute py-3 my-5 mx-5 px-5 top-0 right-0 text-white rounded-[50px]"
-                >
+                <div className="glass-bg2  absolute py-3 my-5 mx-5 px-5 top-0 right-0 text-white rounded-[50px]">
                   <Link
                     href={`/projects/${project._id}`}
                     className="flex items-center justify-between gap-3"
@@ -197,4 +187,4 @@ const EachProjectForCommunitySlider = ({ communityId, index }) => {
   );
 };
 
-export default EachProjectForCommunitySlider;
+export default EachProjectSlider;

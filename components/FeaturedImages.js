@@ -23,40 +23,27 @@ import {
 } from "@/utils/motion";
 
 // import required modules
-import { Autoplay, Pagination, Navigation, EffectFade } from "swiper/modules";
-import Image from "next/image";
-import Recents from "./Recents";
-import { getLatestFeatured } from "@/actions/getLatestFeatured";
-import { formatLocation } from "@/lib/helpers";
-import { getAllCommunities } from "@/actions/getAllCommunities";
-import EachProjectForCommunitySlider from "./EachProjectForCommunitySlider";
+import EachProjectSlider from "./EachProjectSlider";
+import { getAllProjects } from "@/actions/getAllProjects";
 
 const FeaturedImages = () => {
-  const [communities, setCommunities] = useState([]);
-
-  const progressCircle = useRef(null);
-  const progressContent = useRef(null);
-  const onAutoplayTimeLeft = (s, time, progress) => {
-    progressCircle.current.style.setProperty("--progress", 1 - progress);
-    progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
-  };
+  const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    const fetchCommunities = async () => {
-      let data = await getAllCommunities();
+    const fetchProjects = async () => {
+      let data = await getAllProjects();
       data = data.splice(0, 3);
-      setCommunities(data);
+      setProjects(data);
     };
-
-    fetchCommunities();
+    fetchProjects();
   }, []);
 
-  console.log(communities);
+
 
   return (
     <>
       <div className="bg-black">
-        {communities.length > 0 && (
+        {projects.length > 0 && (
           <div>
             <motion.div
               variants={staggerContainer}
@@ -77,9 +64,13 @@ const FeaturedImages = () => {
               <div
                 className={`grid grid-cols-12 gap-6 w-full justify-center items-center`}
               >
-                {/* First */}
-                {communities?.map((community, i) => (
-                    <EachProjectForCommunitySlider key={community?._id} communityId={community?._id} index={i}/>
+                {/* First --- Continue from here */}
+                {projects?.map((project, i) => (
+                  <EachProjectSlider
+                    key={project?._id}
+                    project={project}
+                    index={i}
+                  />
                 ))}
               </div>
             </motion.div>
