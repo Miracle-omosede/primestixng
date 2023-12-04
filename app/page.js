@@ -82,8 +82,8 @@ export default function Home() {
             )}
             <div
               onClick={exitPreloader}
-              className="border-white border-[0.5px] text-white w-36 h-10 flex items-center justify-center 
-            absolute z-30 left-[50%] -translate-x-[50%] bottom-5 rounded-2xl cursor-pointer text-sm"
+              className="border-white border-[0.5px] font-raleway text-white w-36 h-10 flex items-center justify-center 
+            absolute z-30 left-[50%] -translate-x-[50%] bottom-5 rounded-[50px] cursor-pointer text-sm"
             >
               Skip Intro
             </div>

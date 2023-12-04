@@ -198,7 +198,6 @@ export default function HeroSlider() {
           </div>
           <div className="home__shadow"></div>
         </div>
-
         <div className="h-full w-full relative">
           <Image
             alt=""

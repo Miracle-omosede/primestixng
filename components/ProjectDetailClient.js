@@ -156,7 +156,7 @@ const ProjectDetailClient = () => {
             {/* full long description */}
           </div>
 
-          <div className="bg-black">
+          <div className="bg-black font-raleway">
             <div className="max-w-[1100px] mx-auto w-full py-10 md:px-0 px-10">
               {" "}
               <h1 className="text-5xl font-bold py-5 text-white ">Gallery</h1>

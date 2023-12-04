@@ -83,7 +83,7 @@ const News = () => {
               <SwiperSlide
                 onClick={() => router.push(`/news/${n._id}`)}
                 key={n?._id}
-                className="news-slider__wrp swiper-wrapper"
+                className="news-slider__wrp swiper-wrapper font-raleway"
               >
                 <div
                   className="news-slider__item swiper-slide"

@@ -64,7 +64,7 @@ const ProjectListClient = () => {
   
 
   return (
-    <div className="px-[20px] w-full -top-[37px] relative mt-10">
+    <div className="px-[20px] w-full -top-[37px] relative mt-10 font-raleway">
       {isLoading ? (
         <div className="max-w-[970px] lg:max-w-[1170px] mx-auto flex items-center justify-center min-h-[40vh]">
           <BeatLoader color="#e8d5a1b8" />
