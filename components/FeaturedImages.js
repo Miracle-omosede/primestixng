@@ -69,7 +69,7 @@ const FeaturedImages = () => {
                 variants={textVariant2}
                 initial="hidden"
                 whileInView="show"
-                className="capitalize heading text-white font-raleway"
+                className="capitalize heading text-white font-raleway mb-6"
               >
                 Our communities - luxury homes for sale
               </motion.h1>
@@ -79,10 +79,7 @@ const FeaturedImages = () => {
               >
                 {/* First */}
                 {communities?.map((community, i) => (
-                  
                     <EachProjectForCommunitySlider key={community?._id} communityId={community?._id} index={i}/>
-                    
-                
                 ))}
               </div>
             </motion.div>
