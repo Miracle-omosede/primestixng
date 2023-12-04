@@ -110,6 +110,7 @@ export default function Home() {
             }`}
           >
             {/* https://res.cloudinary.com/dulduri72/video/upload/v1701495630/lwkvp4gkn7sgvt59vyeg.mp4 */}
+            {/* Done with the video */}
             <source
               src="https://res.cloudinary.com/dulduri72/video/upload/v1701495630/lwkvp4gkn7sgvt59vyeg.mp4"
               type="video/mp4"
@@ -118,8 +119,7 @@ export default function Home() {
           </video>
         </div>
         <div className="carousel">
-          {/* <ImageSlider />
-           */}
+          {/* <ImageSlider /> */}
           <HeroSlider />
         </div>
         <div className="w-full h-auto">
