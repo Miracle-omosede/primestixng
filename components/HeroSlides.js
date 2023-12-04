@@ -23,7 +23,7 @@ export default function HeroSlider() {
             color="white"
             size="lg"
             onClick={handlePrev}
-            className="!absolute bottom-12 left-4 md:top-2/4 md:left-4 md:-translate-y-2/4"
+            className="!absolute bottom-12 left-[35%] md:left-[42%] md:bg-none bg-white"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -47,7 +47,7 @@ export default function HeroSlider() {
             color="white"
             size="lg"
             onClick={handleNext}
-            className="!absolute bottom-12 right-32 md:top-2/4 md:!right-4 md:-translate-y-2/4"
+            className="!absolute bottom-12  flex left-[55%] md:left-[55%] justify-center md:bg-none bg-white"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

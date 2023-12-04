@@ -90,8 +90,7 @@ const EachProjectForCommunitySlider = ({ communityId, index }) => {
                   layout="fill"
                   alt=""
                 />
-                <motion.div
-                  variants={planetVariants("left")}
+                <div
                   className="glass-bg2  absolute py-3 my-5 mx-5 px-5 top-0 right-0 text-white rounded-[50px]"
                 >
                   <Link
@@ -108,7 +107,7 @@ const EachProjectForCommunitySlider = ({ communityId, index }) => {
                     </svg>
                     <span>Take 3D Tour</span>
                   </Link>
-                </motion.div>
+                </div>
                 <div className="absolute left-0 flex w-full items-end justify-start bottom-0 py-5 md:py-10 my-auto px-16 md:h-40 glass-bg2 text-white">
                   <div className="flex justify-between gap-3 md:text-center text-left md:gap-0 flex-col w-full ">
                     <motion.div

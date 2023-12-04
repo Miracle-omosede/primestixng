@@ -71,7 +71,7 @@ const FeaturedImages = () => {
                 whileInView="show"
                 className="capitalize heading text-white font-raleway mb-6"
               >
-                Our communities - luxury homes for sale
+                Our Featured Homes - luxury homes for sale
               </motion.h1>
 
               <div

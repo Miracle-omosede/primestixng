@@ -42,9 +42,7 @@ const Featured =  () => {
             variants={fadeIn("up", "tween", 0.2, 2)}
             className="text-center text-white z-[999] font- md:text-xl text-sm leading-6 font-raleway"
           >
-            Primestix is a company that has been shaping the Nigeria&apos;s
-            luxury real estate market, delivering iconic residential, commercial
-            and leisure properties for sale across the region and beyond.
+            Embark on a revolutionary adventure with Primestix as we disrupt the real estate landscape in Abuja and revamp luxury living throughout Nigeria. Developing sophisticated and automated residential masterpieces that redefine contemporary living is our goal, ushering in a new era of opulence. At Primestix, we do not just build homes, we automate lifestyles.
           </motion.h2>
         </motion.div>
       </div>

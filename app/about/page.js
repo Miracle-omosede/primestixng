@@ -38,100 +38,32 @@ const About = () => {
         </div>
       </div>
 
-      <div className="max-w-[1100px] w-full mx-auto px-5 md:px-0 font-raleway">
-        <div className="grid grid-cols-12 my-16 gap-5 md:gap-0">
-          <div className="md:col-span-6 col-span-12 flex flex-col">
-            <p className="text-black font-raleway text-2xl">
-              {founder?.description}
-            </p>
-          </div>
-          <div className="md:col-span-6 my-10 md:my-0 col-span-12">
-            <div>
-              <p className="text-md font-semibold">
-                {founder?.short_description}
-              </p>
-            </div>
-
-            <div className="flex flex-col md:flex-row justify-between text-xl font-bold">
-              <div className="">
-                <div className="text-5xl py-2 text-[#AD8F31]">
-                  {founder?.numberOfHomesDelivered}
-                </div>
-                <Divider />
-                <div className="uppercase font-semibold py-3">
-                  homes delivered.
-                </div>
-              </div>
-              <div>
-                <div className="text-5xl py-2 text-[#AD8F31]">
-                  {founder?.numberOfHomesInPlanning}
-                </div>
-                <Divider />
-                <div className="uppercase font-semibold py-3">
-                  in planning and progress
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <span className="text-md uppercase font-semibold">
-                as of {founder?.timeOfDelivery}
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="bg-[#ffe8a1] md:mt-52 px-5 md:px-0 h-[400px]">
-        <div className="flex flex-col font-raleway max-w-[1100px] w-full mx-auto py-20 relative">
-          <div className="grid grid-cols-12 gap-7">
-            <div className="md:col-span-6 col-span-12">
-              <Image
-                className="w-[300px] relative md:absolute object-cover md:-top-[20%] left-0 h-[400px]"
-                src={founder?.image?.asset?.url}
-                width={500}
-                height={500}
-                alt=""
-              />
-            </div>
-            <div className="md:col-span-6 col-span-12 text-black">
-              <div>
-                <h1 className="font-bold text-4xl">
-                Founder &apos;s Message
-                </h1>
-
-                <p className="md:mt-10 mb-5 text-xl relative">
-                  {founder?.short_description}
-                </p>
-                <div className="h-[2px] w-full bg-black" />
-                <div className="w-full font-raleway ">
-                  <Link
-                    href="/founder"
-                    className="w-full flex items-center justify-between py-3 text-black font-bold"
-                  >
-                    <span className="uppercase">Read more</span>
-                    <span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth={1.5}
-                        stroke="currentColor"
-                        className="w-6 h-6"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-                        />
-                      </svg>
-                    </span>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div className="max-w-[1100px] w-full mx-auto px-5 mb-20 md:px-0 font-raleway">
+        <p className="py-5">
+Introducing <b>Primestix</b>, where Design meets innovation, Automation transforms living, and 
+Disruption reshapes the future. Our mantra,<blockquote>Design, Automate, Disrupt,</blockquote>  isn&apos;t just a slogan—it&apos;s 
+our very essence.
+At Primestix, we reset the boundaries of luxury living, setting new standards that are not just 
+timeless but revolutionary. We don&apos;t just build homes; we craft living experiences that stand as 
+timeless pieces of architectural artistry. Every detail, every curve carved, and every innovation is 
+meticulously curated to reflect our commitment to state-of-the-art living.
+Our commitment remains steadfast: Primestix embodies only what is timeless, cutting-edge, state-of-the-art, and exceptional. We don&apos;t conform to trends; we establish them. Our residences 
+transcend mere dwellings; they represent pioneering statements of unmatched craftsmanship and 
+technological brilliance.
+With a focus on sustainability and eco-conscious practices, we seamlessly integrate the latest 
+automation technologies, ensuring that our residents experience the epitome of comfort, 
+convenience, and efficiency. From smart home systems that anticipate your needs to eco-friendly 
+features that minimize our ecological footprint, Primestix residences are pioneering the future of
+However, our efforts don&apos;t end there. Primestix is a force of change, disrupting the real estate 
+domain, questioning norms and envisioning & designing new possibilities. Our developments go 
+beyond mere properties; they serve as lifestyle statements, turning spaces into lively communities 
+and residences into dream homes. We take the lead, and others follow—because, at Primestix, 
+we&apos;re not just constructing homes; we&apos;re enlarging the possibilities of timeless sophistication.
+Join us on a journey where architectural brilliance, cutting-edge technology, and timeless design 
+converge. Primestix is more than a builder; we are the architects of your future, the innovators of 
+your living experience, and the disruptors of the ordinary. 
+Welcome to Primestix, where excellence is not an option—it&apos;s our standard.
+        </p>
       </div>
     </div>
   );
