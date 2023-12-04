@@ -30,7 +30,7 @@ module.exports = withMT({
   theme: {
     extend: {
       fontFamily: {
-        raleway: ["Raleway", "sans-serif"],
+        raleway: ["EB Garamond", "serif"],
         opensans: ["Open Sans", "sans-serif"],
       },
     },
