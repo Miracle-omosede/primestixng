@@ -109,10 +109,10 @@ function MobileView({ open, setOpen }) {
                         onClick={() => {
                           setOpen(!open);
                         }}
-                        href="/"
+                        href="/team"
                         className="link-item"
                       >
-                        Csr
+                        Meet the Team
                       </Link>
                     </li>
                     <li>
