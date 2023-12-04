@@ -31,15 +31,8 @@ import { formatLocation } from "@/lib/helpers";
 import { getAllCommunityProjects } from "@/actions/getAllProjectsInCommunity";
 
 const EachProjectSlider = ({ project, index }) => {
+  
   // Please check why the progress Circle is not working
-  const progressCircle = useRef(null);
-  const progressContent = useRef(null);
-
-  const onAutoplayTimeLeft = (s, time, progress) => {
-    progressCircle.current.style.setProperty("--progress", 1 - progress);
-    progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
-  };
-
   console.log(project?.gallery);
 
   return (
@@ -64,7 +57,6 @@ const EachProjectSlider = ({ project, index }) => {
           }}
           effect={"fade"}
           navigation={false}
-          onAutoplayTimeLeft={onAutoplayTimeLeft}
           modules={[EffectFade, Autoplay, Pagination, Navigation]}
           className="mySwiper"
         >
@@ -82,7 +74,78 @@ const EachProjectSlider = ({ project, index }) => {
                   layout="fill"
                   alt=""
                 />
-                <div className="glass-bg2  absolute py-3 my-5 mx-5 px-5 top-0 right-0 text-white rounded-[50px]">
+                <div className="home__overlay2"></div>
+                <motion.div className="w-full text-left absolute bottom-0 font-raleway text-white flex flex-col" variants={staggerContainer}
+                      initial="hidden"
+                      whileInView="show"
+                      viewport={{ once: false, amount: 0.25 }} >
+                  <div className="px-5">
+                    <motion.h1 variants={textVariant(1.1)} className="text-3xl font-[600]">{project?.name}.</motion.h1>
+                    {/* sub-heading */}
+                    <motion.h2 variants={textVariant(1.2)} className="font-[300] flex items-center tracking-wider">
+                    <span className="flex">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            strokeWidth={1.5}
+                            stroke="currentColor"
+                            className="w-6 h-6"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                            />
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                            />
+                          </svg>
+                        </span>
+                     <span>
+                     {formatLocation(
+                        project?.city?.name,
+                        project?.country?.name
+                      )}
+                     </span>
+                    </motion.h2>
+                    <motion.p variants={textVariant(1.3)} className="text-sm w-full font-raleway py-2 font-[500]">
+  {project?.description && project?.description.length > 150
+    ? `${project.description.substring(0, 150).trim()}...`
+    : project?.description}
+</motion.p>
+                  </div>
+
+                  <div className="divider w-full bg-[#AD8F31] h-[1px]"></div>
+                  <motion.div className="w-full font-raleway px-5" variants={textVariant(1.4)}>
+                    <Link
+                      href={`/projects/${project._id}`}
+                      className="w-full flex items-center justify-between py-3"
+                    >
+                      <span className="uppercase">Learn more</span>
+                      <span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth={1.5}
+                          stroke="currentColor"
+                          className="w-6 h-6"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                          />
+                        </svg>
+                      </span>
+                    </Link>
+                  </motion.div>
+                </motion.div>
+
+                <div className="glass-bg2 font-raleway absolute py-3 my-5 mx-5 px-5 top-0 right-0 text-white rounded-[50px]">
                   <Link
                     href={`/projects/${project._id}`}
                     className="flex items-center justify-between gap-3"
@@ -95,10 +158,10 @@ const EachProjectSlider = ({ project, index }) => {
                     >
                       <path d="M4.5 4.5a3 3 0 00-3 3v9a3 3 0 003 3h8.25a3 3 0 003-3v-9a3 3 0 00-3-3H4.5zM19.94 18.75l-2.69-2.69V7.94l2.69-2.69c.944-.945 2.56-.276 2.56 1.06v11.38c0 1.336-1.616 2.005-2.56 1.06z" />
                     </svg>
-                    <span>Take 3D Tour</span>
+                    <span className="font-raleway">Take 3D Tour</span>
                   </Link>
                 </div>
-                <div className="absolute left-0 flex w-full items-end justify-start bottom-0 py-5 md:py-10 my-auto px-16 md:h-40 glass-bg2 text-white">
+                {/* <div className="absolute left-0 flex w-full items-end justify-start bottom-0 py-5 md:py-10 my-auto px-16 md:h-40 glass-bg2 text-white">
                   <div className="flex justify-between gap-3 md:text-center text-left md:gap-0 flex-col w-full ">
                     <motion.div
                       className="font-raleway flex flex-col gap-2 items-start justify-between"
@@ -171,16 +234,10 @@ const EachProjectSlider = ({ project, index }) => {
                       </Link>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </motion.div>
             </SwiperSlide>
           ))}
-          <div className="autoplay-progress" slot="container-end">
-            <svg viewBox="0 0 48 48" ref={progressCircle}>
-              <circle cx="24" cy="24" r="20"></circle>
-            </svg>
-            <span ref={progressContent}></span>
-          </div>
         </Swiper>
       )}
     </motion.div>

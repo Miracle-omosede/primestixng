@@ -12,7 +12,7 @@ const Navigation = () => {
 
   return (
     <div>
-      <div className="bg-white z-[9999] fixed bottom-0 w-full h-[60px] my-auto items-center justify-center flex font-semibold capitalize">
+      <div className="bg-white z-[9999] font-raleway fixed bottom-0 w-full h-[60px] my-auto items-center justify-center flex font-semibold capitalize">
         <ul className="display flex w-full justify-around items-center">
           <li className={`flex items-center flex-col cursor-pointer relative`}>
             <i className="ri-customer-service-2-line"></i>

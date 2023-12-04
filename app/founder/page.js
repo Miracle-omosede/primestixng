@@ -46,18 +46,18 @@ const Founder = () => {
               <div className="flex flex-col md:items-center md:justify-center mt-5 md:px-0 px-5 font-raleway max-w-[1100px] md:mt-20 w-full mx-auto md:py-20 relative">
                 <div className="grid grid-cols-12 md:gap-7">
                   <div className="md:col-span-12 col-span-12 flex flex-row gap-2">
-                    <div className="grid grid-cols-12 gap-3">
-                      <div className="md:col-span-6 col-span-12">
+                    <div className="grid grid-cols-12 gap-3 w-full">
+                      <div className="md:col-span-12 col-span-12">
                         <Image
                           className="w-[300px] relative object-cover h-[400px]"
-                          src="/staffs/ceo.jpg"
+                          src="/founders.png"
                           width={500}
                           height={500}
-                          alt="ceo"
+                          alt="ceos"
                         />
                         <div>
                           <span className="text-slate-600 italic font-bold">
-                            Maxwell Okperi
+                            Maxwell Okperi & Hanim Windibiziri
                           </span>
                           <br />
                           {/* <span className="text-slate-500 font-bold">
@@ -65,24 +65,7 @@ const Founder = () => {
                     </span> */}
                         </div>
                       </div>
-                      <div className="md:col-span-6 col-span-12">
-                        <Image
-                          className="w-[300px] relative object-cover h-[400px]"
-                          src="/staffs/director.jpg"
-                          width={500}
-                          height={500}
-                          alt="second ceo"
-                        />
-                        <div>
-                          <span className="text-slate-600 italic font-bold">
-                            Hanim Windibiziri
-                          </span>
-                          <br />
-                          {/* <span className="text-slate-500 font-bold">
-                    
-                    </span> */}
-                        </div>
-                      </div>
+            
                     </div>
                   </div>
                   <div className="md:col-span-12 col-span-12 flex flex-col">
