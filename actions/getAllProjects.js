@@ -4,24 +4,29 @@ export const getAllProjects = async () => {
   const query = `*[_type == 'project']{
       _id,
       name,
+      city->{name},
       price,
       description,
-      bannerImage{
+      bannerImage {
         asset->{
-            url
+          url
         }
       },
       location,
       projectType,
-      country,
+      country->{name},
       long,
       lat,
-      faqs[],
+      faqs[]{question, answer},
       landmarks[]{title, description},
       amenities[]{description},
-      gallery[]{ImageUrl {asset->{
-        url
-      }}},
+      gallery[]->{
+        imageUrl{
+          asset->{
+            url
+          }
+        }
+      },
       createdAt
 
     }`;
