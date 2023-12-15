@@ -73,9 +73,9 @@ const Footer = () => {
                     />{" "}
                     <h1 className="heading -ml-[3rem] leading-6">
                       Primestix <br />
-                      <span className="-mt-5 text-sm capitalize">
+                      {/* <span className="-mt-5 text-sm capitalize">
                         Where we give best.
-                      </span>
+                      </span> */}
                     </h1>
                   </Link>
 
@@ -111,7 +111,7 @@ const Footer = () => {
                 </div>
               </div>
               <div className="col-span-12 md:col-span-4 flex flex-col gap-2">
-                <h1 className="heading">Why PRIMSTIX?</h1>
+                <h1 className="heading">Why PRIMESTIX?</h1>
                 <Link href="/about">About Primestix</Link>
                 <Link href="/founder">Founder&apos;s Message</Link>
                 <Link href="/">Careers</Link>

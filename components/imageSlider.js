@@ -107,7 +107,7 @@ export default function ImageSlider() {
                   </div>
 
                   {/*description  */}
-                  <div className="font-raleway  md:col-span-6 hidden md:flex">
+                  {/* <div className="font-raleway  md:col-span-6 hidden md:flex">
                     <p className="text-left w-full md:w-2/4 text-md p-10 glass-bg">
                       <span>
                         <svg
@@ -128,7 +128,7 @@ export default function ImageSlider() {
                       Experience opulent living in our luxurious apartments
                       located in the heart of Nigeria.
                     </p>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="home__shadow"></div>
               </SwiperSlide>

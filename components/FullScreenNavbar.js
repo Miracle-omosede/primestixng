@@ -99,9 +99,9 @@ function MobileView({ open, setOpen }) {
                           setOpen(!open);
                         }}
                         href="/"
-                        className="link-item"
+                        className="link-item capitalize"
                       >
-                        Investor relations
+                         Corporate Social Responsibility
                       </Link>
                     </li>
                     <li>
@@ -113,17 +113,6 @@ function MobileView({ open, setOpen }) {
                         className="link-item"
                       >
                         Meet the Team
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        onClick={() => {
-                          setOpen(!open);
-                        }}
-                        href="/"
-                        className="link-item"
-                      >
-                        hotels & resorts
                       </Link>
                     </li>
                   </ul>

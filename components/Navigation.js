@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Modal from "./Modal";
+import Link from "next/link"
 
 const Navigation = () => {
   const [openModal, setOpenModal] = useState(false);
@@ -15,10 +16,35 @@ const Navigation = () => {
       <div className="bg-white z-[9999] font-raleway fixed bottom-0 w-full h-[60px] my-auto items-center justify-center flex font-semibold capitalize">
         <ul className="display flex w-full justify-around items-center">
           <li className={`flex items-center flex-col cursor-pointer relative`}>
-            <i className="ri-customer-service-2-line"></i>
-            <span> Enquire </span>
+          <i class="ri-mail-line"></i>
+            <span> Email </span>
           </li>
 
+          <li
+            className={`flex items-center flex-col cursor-pointer relative`}
+            onClick={() => handleItemClick(1)} // Provide an appropriate index
+          >
+            <Link href="/" className="flex flex-col items-center justify-center ">
+            <i class="ri-home-line"></i>
+            <span> Home </span>
+
+            </Link>
+            {/* Dropdown content */}
+            {/* {dropdownVisible === 1 && (
+            <div className="absolute -top-[120px] text-center w-[150px] text-xs bg-white p-2 shadow-md">
+              
+              <ul>
+                <li>
+                  Sales <br></br>+971 4 520 5400
+                </li>
+                <li className="divider h-1 w-full my-2 bg-[#A18830]"></li>
+                <li>
+                  Customer Relations <br></br>+971 4 520 5400
+                </li>
+              </ul>
+            </div>
+          )} */}
+          </li>
           <li
             className={`flex items-center flex-col cursor-pointer relative`}
             onClick={() => handleItemClick(1)} // Provide an appropriate index

@@ -42,7 +42,7 @@ const FeaturedImages = () => {
 
   return (
     <>
-      <div className="bg-black">
+      <div className="bg-[#AB8D2E]">
         {projects.length > 0 && (
           <div>
             <motion.div
@@ -58,7 +58,7 @@ const FeaturedImages = () => {
                 whileInView="show"
                 className="capitalize heading text-white font-raleway mb-6"
               >
-                Our Featured Homes - luxury homes for sale
+                THE MAISON TERRANOVA
               </motion.h1>
 
               <div

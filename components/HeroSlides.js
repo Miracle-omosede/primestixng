@@ -110,7 +110,7 @@ export default function HeroSlider() {
             </motion.div>
 
             {/*description  */}
-            <div className="font-raleway  md:col-span-6 hidden md:flex">
+            {/* <div className="font-raleway  md:col-span-6 hidden md:flex">
               <motion.p
                 variants={textVariant(1.2)}
                 className="text-left w-full md:w-2/4 text-md p-10 glass-bg z-10"
@@ -134,7 +134,7 @@ export default function HeroSlider() {
                 Experience opulent living in our luxurious apartments located in
                 the heart of the city.
               </motion.p>
-            </div>
+            </div> */}
           </div>
           <div className="home__shadow"></div>
         </div>
@@ -170,7 +170,7 @@ export default function HeroSlider() {
             </motion.div>
 
             {/*description  */}
-            <div className="font-raleway  md:col-span-6 hidden md:flex">
+            {/* <div className="font-raleway  md:col-span-6 hidden md:flex">
               <motion.p
                 variants={textVariant(1.2)}
                 className="text-left w-full md:w-2/4 text-md p-10 glass-bg"
@@ -194,7 +194,7 @@ export default function HeroSlider() {
                 Experience opulent living in our luxurious apartments located in
                 the heart of the city.
               </motion.p>
-            </div>
+            </div> */}
           </div>
           <div className="home__shadow"></div>
         </div>
@@ -229,7 +229,7 @@ export default function HeroSlider() {
               <Button className="z-10" />
             </motion.div>
 
-            <div className="font-raleway  md:col-span-6 hidden md:flex">
+            {/* <div className="font-raleway  md:col-span-6 hidden md:flex">
               <motion.p
                 variants={textVariant(1.2)}
                 className="text-left w-full md:w-2/4 text-md p-10 glass-bg"
@@ -253,7 +253,7 @@ export default function HeroSlider() {
                 Experience opulent living in our luxurious apartments located in
                 the heart of the city.
               </motion.p>
-            </div>
+            </div> */}
           </div>
           <div className="home__shadow"></div>
         </div>

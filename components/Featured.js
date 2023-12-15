@@ -35,8 +35,8 @@ const Featured =  () => {
             variants={fadeIn("up", "tween", 0.2, 1)}
             className="primary-heading text-center capitalize font-[600] leading-8"
           >
-            The premier luxury
-            <span className="leading-3">property developer in Nigeria</span>
+            Redefining Real Estate.
+            <span className="leading-3"> A new era in property development.</span>
           </motion.h1>
           <motion.h2
             variants={fadeIn("up", "tween", 0.2, 2)}

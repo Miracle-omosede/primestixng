@@ -33,10 +33,10 @@ const Project = ({ data }) => {
             {data?.location}
           </h4>
 
-          <div className="py-3">
+          {/* <div className="py-3">
             <b>N </b>
             {data?.price}
-          </div>
+          </div> */}
 
           <p className="text-[#4a4a4a]   text-md font-bold h-[46px] mb-[1px] ">
   {data?.description && data.description.length > 60
