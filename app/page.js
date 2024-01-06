@@ -109,8 +109,8 @@ export default function Home() {
               videoLoaded ? "visible" : "hidden"
             }`}
           >
-            {/* https://res.cloudinary.com/dulduri72/video/upload/v1701495630/lwkvp4gkn7sgvt59vyeg.mp4 */}
-            {/* Done with the video */}
+               https://res.cloudinary.com/dulduri72/video/upload/v1701495630/lwkvp4gkn7sgvt59vyeg.mp4
+            Done with the video
             <source
               src="https://res.cloudinary.com/dulduri72/video/upload/v1701495630/lwkvp4gkn7sgvt59vyeg.mp4"
               type="video/mp4"

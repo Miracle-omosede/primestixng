@@ -11,11 +11,9 @@ import "../styles/news-slider.scss";
 import "swiper/css";
 import "swiper/css/pagination";
 
-
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 
 import { slideIn, staggerContainer, textVariant } from "@/utils/motion";
-
 
 // import required modules
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
@@ -25,7 +23,7 @@ import ReadAllBtn from "./ReadAllBtn";
 
 const News = () => {
   const [news, setNews] = useState([]);
-  const router = useRouter()
+  const router = useRouter();
 
   useEffect(() => {
     const fetchNews = async () => {
@@ -37,18 +35,30 @@ const News = () => {
     fetchNews();
   }, []);
 
-
   return (
     <div className="relative md:px-0 px-5 font-raleway">
       {news && (
         <>
-          <motion.div className="two alt-two"  variants={staggerContainer} initial="hidden" whileInView="show" viewport={{ once: false, amount: 0.25}}>
-            <motion.h1  variants={textVariant(1.1)} className="primary-heading" style={{ color: "white" }}>
+          <motion.div
+            className="two alt-two"
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.25 }}
+          >
+            <motion.h1
+              variants={textVariant(1.1)}
+              className="primary-heading"
+              style={{ color: "white" }}
+            >
               News
             </motion.h1>
           </motion.div>
 
-          <span className="capitalize flex items-center justify-center text-white my-5 font-semibold text-center text-xl font-raleway px-5 md:px-32" variants={textVariant(1.2)}>
+          <span
+            className="capitalize flex items-center justify-center text-white my-5 font-semibold text-center text-xl font-raleway px-5 md:px-32"
+            variants={textVariant(1.2)}
+          >
             Get updated with the latest news
           </span>
           <Swiper
@@ -85,9 +95,7 @@ const News = () => {
                 key={n?._id}
                 className="news-slider__wrp swiper-wrapper font-raleway"
               >
-                <div
-                  className="news-slider__item swiper-slide"
-                >
+                <div className="news-slider__item swiper-slide">
                   <div className="news__item">
                     {/* Here */}
                     <FormattedDate createdAt={n?._createdAt} />
@@ -96,10 +104,10 @@ const News = () => {
                     </div>
 
                     <p className="news__txt">
-  {n?.body && n.body.length > 120
-    ? `${n.body.substring(0, 120)}...`
-    : n?.body}
-</p>
+                      {n?.body && n.body.length > 120
+                        ? `${n.body.substring(0, 120)}...`
+                        : n?.body}
+                    </p>
 
                     <div className="news__img object-cover">
                       <Image
@@ -118,8 +126,11 @@ const News = () => {
         </>
       )}
 
-      <motion.div className="flex items-center justify-center" variants={textVariant(1.2)}>
-      <ReadAllBtn/>
+      <motion.div
+        className="flex items-center justify-center"
+        variants={textVariant(1.2)}
+      >
+        <ReadAllBtn />
       </motion.div>
     </div>
   );

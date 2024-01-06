@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { getFoundersMessage } from "@/actions/getFoundersMessage";
 
+
 const Founder = () => {
   const [founders, setFounder] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -33,23 +34,23 @@ const Founder = () => {
         <>
           <div className="mb-20">
             <div className="bg-black mt-20">
-              <div className="flex flex-col font-raleway max-w-[1100px] w-full mx-auto px-5 md:px-0 py-20">
+              <div className="flex flex-col font-raleway max-w-[1100px] w-full mx-auto px-5 md:px-0 py-20 items-center justify-center text-center">
                 <div className="text-white">
                   <h1 className="text-4xl font-semibold">About PRIMESTIX</h1>
-                  <p className="capitalize text-xl text-gray-400 md:text-2xl">
+                  <p className="capitalize text-2xl w-full text-gray-400 md:text-2xl">
                     Founder&apos;s message
                   </p>
                 </div>
               </div>
             </div>
             <div>
-              <div className="flex flex-col md:items-center md:justify-center mt-5 md:px-0 px-5 font-raleway max-w-[1100px] md:mt-20 w-full mx-auto md:py-20 relative">
-                <div className="grid grid-cols-12 md:gap-7">
+              <div className="flex flex-col md:items-center md:justify-center pt-4 md:px-0 px-5 font-raleway max-w-[1100px] md:mt-5 w-full mx-auto md:py-20 relative">
+                <div className="grid grid-cols-12 md:gap-7 ">
                   <div className="md:col-span-12 col-span-12 flex flex-row gap-2">
-                    <div className="grid grid-cols-12 gap-3 w-full">
-                      <div className="md:col-span-12 col-span-12">
+                    <div className="grid grid-cols-12 gap-3 w-full ">
+                      <div className="md:col-span-12 col-span-12 flex flex-col items-center justify-center mb-5">
                         <Image
-                          className="w-[300px] relative object-cover h-[400px]"
+                          className="w-[500px] relative object-cover h-[400px]"
                           src="/founders.png"
                           width={500}
                           height={500}
@@ -60,9 +61,7 @@ const Founder = () => {
                             Maxwell Okperi & Hanim Windibiziri
                           </span>
                           <br />
-                          {/* <span className="text-slate-500 font-bold">
-                    
-                    </span> */}
+                         
                         </div>
                       </div>
             
@@ -70,8 +69,8 @@ const Founder = () => {
                   </div>
                   <div className="md:col-span-12 col-span-12 flex flex-col">
                     {/* Founder message */}
-                    <p>
-                      Dear Friends and Future Homeowners,
+                    <p className="text-center">
+                      <b className="text-xl py-2">Dear Friends and Future Homeowners,</b>
                       <br />
                       Welcome! Ndewo!! Ekaabo!!! Barka Da Zuwa!!!!
                       <br />
