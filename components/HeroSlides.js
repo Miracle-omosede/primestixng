@@ -17,74 +17,78 @@ export default function HeroSlider() {
   return (
     <>
       <Carousel
-        prevArrow={({ handlePrev }) => (
-          <IconButton
-            variant="text"
-            color="white"
-            size="lg"
-            onClick={handlePrev}
-            className="!absolute bottom-12 left-[35%] md:left-[42%] md:bg-none bg-white"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={2}
-              stroke="#a18830"
-              className="h-6 w-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
-              />
-            </svg>
-          </IconButton>
-        )}
-        nextArrow={({ handleNext }) => (
-          <IconButton
-            variant="text"
-            color="white"
-            size="lg"
-            onClick={handleNext}
-            className="!absolute bottom-12  flex left-[55%] md:left-[55%] justify-center md:bg-none bg-white"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={2}
-              stroke="#a18830"
-              className="h-6 w-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-              />
-            </svg>
-          </IconButton>
-        )}
-        navigation={({ setActiveIndex, activeIndex, length }) => (
-          <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
-            {new Array(length).fill("").map((_, i) => (
-              <span
-                key={i}
-                className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] ${
-                  activeIndex === i ? "w-8 bg-[#a18830]" : "w-4 bg-[#856d16]"
-                }`}
-                onClick={() => setActiveIndex(i)}
-              />
-            ))}
-          </div>
-        )}
+      prevArrow={(false)}
+      nextArrow={(false)}
+      autoplay={(true)}
+      loop={(true)}
+        // prevArrow={({ handlePrev }) => (
+        //   <IconButton
+        //     variant="text"
+        //     color="white"
+        //     size="lg"
+        //     onClick={handlePrev}
+        //     className="!absolute bottom-12 left-[35%] md:left-[42%] md:bg-none bg-white"
+        //   >
+        //     <svg
+        //       xmlns="http://www.w3.org/2000/svg"
+        //       fill="none"
+        //       viewBox="0 0 24 24"
+        //       strokeWidth={2}
+        //       stroke="#a18830"
+        //       className="h-6 w-6"
+        //     >
+        //       <path
+        //         strokeLinecap="round"
+        //         strokeLinejoin="round"
+        //         d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
+        //       />
+        //     </svg>
+        //   </IconButton>
+        // )}
+        // nextArrow={({ handleNext }) => (
+        //   <IconButton
+        //     variant="text"
+        //     color="white"
+        //     size="lg"
+        //     onClick={handleNext}
+        //     className="!absolute bottom-12  flex left-[55%] md:left-[55%] justify-center md:bg-none bg-white"
+        //   >
+        //     <svg
+        //       xmlns="http://www.w3.org/2000/svg"
+        //       fill="none"
+        //       viewBox="0 0 24 24"
+        //       strokeWidth={2}
+        //       stroke="#a18830"
+        //       className="h-6 w-6"
+        //     >
+        //       <path
+        //         strokeLinecap="round"
+        //         strokeLinejoin="round"
+        //         d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+        //       />
+        //     </svg>
+        //   </IconButton>
+        // )}
+        // navigation={({ setActiveIndex, activeIndex, length }) => (
+        //   <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
+        //     {new Array(length).fill("").map((_, i) => (
+        //       <span
+        //         key={i}
+        //         className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] ${
+        //           activeIndex === i ? "w-8 bg-[#a18830]" : "w-4 bg-[#856d16]"
+        //         }`}
+        //         onClick={() => setActiveIndex(i)}
+        //       />
+        //     ))}
+        //   </div>
+        // )}
       >
         <div className="h-full w-full relative">
           <Image
             alt=""
             className="slightly-zoomed-image object-cover"
             layout="fill"
-            src="/pic-4.jpg"
+            src="/landing1.jpg"
           />
           <div className="absolute  text-white top-0  flex flex-col md:grid grid-cols-12 justify-center md:items-center w-full h-full left-[10%]">
             <motion.div
@@ -143,7 +147,7 @@ export default function HeroSlider() {
             alt=""
             className="slightly-zoomed-image object-cover"
             layout="fill"
-            src="/pic-7.jpg"
+            src="/landing2.jpg"
           />
           <div className="absolute z-10 text-white top-0 flex flex-col md:grid grid-cols-12 justify-center md:items-center w-full h-full left-[10%]">
             <motion.div
@@ -203,7 +207,7 @@ export default function HeroSlider() {
             alt=""
             className="slightly-zoomed-image object-cover"
             layout="fill"
-            src="/pic-5.jpg"
+            src="/landing4.jpg"
           />
           <div className="absolute z-10 text-white top-0 flex flex-col md:grid grid-cols-12 justify-center md:items-center w-full h-full left-[10%]">
             <motion.div
