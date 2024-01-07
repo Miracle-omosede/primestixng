@@ -27,17 +27,6 @@ export default function Home() {
 
   const videoHasBeenSeen = videoState.hasVisited;
 
-  console.log("videoHasBeenSeen: ", videoHasBeenSeen);
-  console.log("hasPreloader: ", hasPreloader);
-
-  const youCannotShow =
-    (videoHasBeenSeen === true && hasPreloader === true) ||
-    (videoHasBeenSeen === true && hasPreloader === false);
-
-  const youCanShowIfYouWish =
-    (videoHasBeenSeen === false && hasPreloader === true) ||
-    (videoHasBeenSeen === false && hasPreloader === false);
-
   useEffect(() => {
     // setVideoLoaded(true);
     const videoLoadingTimeout = setTimeout(() => {
@@ -56,6 +45,9 @@ export default function Home() {
       clearTimeout(videoLoadingTimeout);
       clearTimeout(preloaderTimeout);
     };
+
+
+    
   }, []);
   // Add this useEffect to start playing the video when it's loaded
 
@@ -72,6 +64,7 @@ export default function Home() {
   const exitPreloader = () => {
     sethasPreloader(false);
     setVideoIsMuted(true);
+    setVideoIsMuted(true);
     videoState.setHasVisitedTrue();
     videoRef.current.muted = true;
   };
@@ -82,61 +75,81 @@ export default function Home() {
         {/* Preloader Video */}
 
         <div
+          style={{
+            display: videoHasBeenSeen ? "none" : "block",
+          }}
           className={`fixed top-0 left-0 right-0 bottom-0 bg-white z-[100000] transition-all duration-[1s] ${
-            hasPreloader
-              ? "translate-y-0 opacity-100"
-              : "-translate-y-[100%] opacity-0"
-          } ${videoHasBeenSeen && "-translate-y-[100%] opacity-0"}`}
+            hasPreloader ? "translate-y-0" : "-translate-y-[100%]"
+          }`}
         >
-          <div className="absolute top-0 right-0 left-0 bottom-0">
+          <div
+            style={{
+              display: videoHasBeenSeen ? "none" : "block",
+            }}
+            className="absolute top-0 right-0 left-0 bottom-0 "
+          >
             {!videoLoaded && (
-              <div className="loading-indicator text-black flex items-center justify-center absolute top-0 left-0 right-0 bottom-0">
-                <Image
-                  src="/horizontal-logo-removebg-preview.png"
-                  className="animate-bounce ease-in-out duration-1000 w-auto h-20 md:h-28"
-                  height={796}
-                  width={313}
-                  alt="preview"
-                />
+              <div
+                style={{
+                  display: videoHasBeenSeen ? "none" : "flex",
+                }}
+                className="loading-indicator text-black flex items-center justify-center absolute top-0 left-0 right-0 bottom-0"
+              >
+                {!videoHasBeenSeen && (
+                  <Image
+                    src="/horizontal-logo-removebg-preview.png"
+                    className="animate-bounce ease-in-out duration-1000 w-auto h-20 md:h-28"
+                    height={796}
+                    width={313}
+                    alt="preview"
+                  />
+                )}
               </div>
             )}
-            <div
-              onClick={exitPreloader}
-              className="border-white border-[0.5px] font-raleway text-white w-36 h-10 flex items-center justify-center 
+
+            {!videoHasBeenSeen && (
+              <>
+                <div
+                  onClick={exitPreloader}
+                  className="border-white border-[0.5px] font-raleway text-white w-36 h-10 flex items-center justify-center 
             absolute z-30 left-[50%] -translate-x-[50%] bottom-5 rounded-[50px] cursor-pointer text-sm"
-            >
-              Skip Intro
-            </div>
-            {/* Volume */}
-            <div
-              onClick={toggleMute}
-              className="absolute top-5 left-5 border-white cursor-pointer border rounded-full h-9 w-9 flex items-center justify-center z-50"
-            >
-              {videoIsMuted ? (
-                <IoVolumeMute color="white" />
-              ) : (
-                <IoVolumeHighSharp color="white" />
-              )}
-            </div>
+                >
+                  Skip Intro
+                </div>
+                {/* Volume */}
+                <div
+                  onClick={toggleMute}
+                  className="absolute top-5 left-5 border-white cursor-pointer border rounded-full h-9 w-9 flex items-center justify-center z-50"
+                >
+                  {videoIsMuted ? (
+                    <IoVolumeMute color="white" />
+                  ) : (
+                    <IoVolumeHighSharp color="white" />
+                  )}
+                </div>
+              </>
+            )}
           </div>
-          <video
-            muted
-            ref={videoRef}
-            autoPlay={true}
-            controls={false}
-            loop
-            className={`w-full h-full object-cover ${
-              videoLoaded ? "visible" : "hidden"
-            }`}
-          >
-            {/* https://res.cloudinary.com/dulduri72/video/upload/v1701495630/lwkvp4gkn7sgvt59vyeg.mp4 */}
-            {/* Done with the video */}
-            <source
-              src="https://res.cloudinary.com/dulduri72/video/upload/v1701495630/lwkvp4gkn7sgvt59vyeg.mp4"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
+          {!videoHasBeenSeen && (
+            <video
+              muted
+              ref={videoRef}
+              autoPlay={true}
+              controls={false}
+              loop
+              className={`w-full h-full object-cover ${
+                videoLoaded ? "visible" : "hidden"
+              }`}
+            >
+              {/* https://res.cloudinary.com/dulduri72/video/upload/v1701495630/lwkvp4gkn7sgvt59vyeg.mp4
+              Done with the video */}
+              <source
+                src="https://res.cloudinary.com/dulduri72/video/upload/v1701495630/lwkvp4gkn7sgvt59vyeg.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+          )}
         </div>
 
         <div className="carousel">
