@@ -253,12 +253,12 @@ const Page = () => {
                       className="object-cover w-full h-full"
                     />
                     <div className="absolute -bottom-10 delay-500 duration-1000 group-hover:bottom-10 scale-0 group-hover:scale-125 text-white">
-                      {/* <button className=" py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col rounded-[50px] items-center justify-center bg-white text-[#A18830]">
-                        <span>Nnadi Johnson</span>
-                        <span className="text-xs italic">
+                      <button className=" py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col rounded-[50px] items-center justify-center bg-white text-[#A18830]">
+                        <span>Gideon Olaleye</span>
+                        {/* <span className="text-xs italic">
                           Chief Executive Officer
-                        </span>
-                      </button> */}
+                        </span> */}
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -296,12 +296,12 @@ const Page = () => {
                       className="object-cover w-full h-full"
                     />
                     <div className="absolute -bottom-10 delay-500 duration-1000 group-hover:bottom-10 scale-0 group-hover:scale-125 text-white">
-                      {/* <button className=" py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col rounded-[50px] items-center justify-center bg-white text-[#A18830]">
-                        <span>Nnadi Johnson</span>
-                        <span className="text-xs italic">
+                      <button className=" py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col rounded-[50px] items-center justify-center bg-white text-[#A18830]">
+                        <span>Raphael Edet Okon</span>
+                        {/* <span className="text-xs italic">
                           Chief Executive Officer
-                        </span>
-                      </button> */}
+                        </span> */}
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -425,8 +425,8 @@ const Page = () => {
                     />
                     <div className="absolute -bottom-10 delay-500 duration-1000 group-hover:bottom-10 scale-0 group-hover:scale-125 text-white">
                       <button className=" py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col rounded-[50px] items-center justify-center bg-white text-[#A18830]">
-                        {/* <span>Nnadi Johnson</span>
-                        <span className="text-xs italic">
+                        <span>Odey Lilian Chinwe</span>
+                        {/* <span className="text-xs italic">
                           Chief Executive Officer
                         </span> */}
                       </button>
