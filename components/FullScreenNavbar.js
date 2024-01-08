@@ -63,18 +63,6 @@ function MobileView({ open, setOpen }) {
                       
 
                     ))}
-                    <li>
-                        <Link
-                          onClick={() => {
-                            setOpen(!open);
-                          }}
-                          href="/penthouse"
-                          
-                          className="link-item"
-                        >
-                          Penthouse template 
-                        </Link>
-                      </li>
                   </ul>
                 </div>
                 <div className="mr-16">
