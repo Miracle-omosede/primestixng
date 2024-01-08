@@ -20,10 +20,10 @@ export default function RootLayout({ children }) {
           <FullScreenNavbar />
         </div>
         <ToastProvider />
-        
+
         {children}
         <div>
-          <div className="pt-[2rem]"/>
+          <div className="pt-[2rem]" />
           <Navigation />{" "}
         </div>
       </body>
