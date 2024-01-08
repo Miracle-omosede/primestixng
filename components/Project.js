@@ -8,8 +8,7 @@ const Project = ({ data }) => {
   console.log(data);
 
   return (
-<Link href={`/projects/${data?._id}`}>
-
+    <Link href={`/projects/${data?._id}`}>
       <div className="shadow-2xl font-raleway">
         <div
           style={{
@@ -29,8 +28,8 @@ const Project = ({ data }) => {
             {data?.name}
           </h3>
           <h4 className="text-[#4a4a4a] text-md h-[25px] font-bold">
-          <i class="ri-map-pin-line"></i>
-            {data?.location}
+            <i className="ri-map-pin-line"></i>
+            {/* {data?.location} */}
           </h4>
 
           {/* <div className="py-3">
@@ -39,10 +38,10 @@ const Project = ({ data }) => {
           </div> */}
 
           <p className="text-[#4a4a4a]   text-md font-bold h-[46px] mb-[1px] ">
-  {data?.description && data.description.length > 60
-    ? `${data.description.substring(0, 60)}...`
-    : data?.description}
-</p>
+            {data?.description && data.description.length > 60
+              ? `${data.description.substring(0, 60)}...`
+              : data?.description}
+          </p>
 
           <div className=" bg-[#cfba82] h-[1px] w-full mt-5" />
           <div className="h-[50px] flex items-center justify-between">

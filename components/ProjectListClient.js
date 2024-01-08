@@ -20,10 +20,11 @@ const ProjectListClient = () => {
   // Like I said, you can use server fetching if you like!
 
   const search = searchData.search;
-  const country = searchData.country;
-  const project_type = searchData.project_type;
   const orderOfItems = searchData.orderOfItems;
-  const city = searchData.city;
+
+  const location = searchData.location;
+  const buildingType = searchData.buildingType;
+  const bedroomsNumber = searchData.bedroomsNumber;
 
   useEffect(() => {
     const fetchProjectData = async () => {
@@ -33,10 +34,10 @@ const ProjectListClient = () => {
         url: "/api/project",
         query: {
           search,
-          country,
-          project_type,
           orderOfItems,
-          city,
+          location,
+          buildingType,
+          bedroomsNumber,
         },
       });
 
@@ -58,33 +59,38 @@ const ProjectListClient = () => {
     };
 
     fetchProjectData();
-  }, [search, country, project_type, orderOfItems, city]);
-
-
-  
+  }, [
+    search,
+    orderOfItems,
+    location,
+    buildingType,
+    bedroomsNumber,
+  ]);
 
   return (
-    <div className="px-[20px] w-full -top-[37px] relative mt-10 font-raleway">
-      {isLoading ? (
-        <div className="max-w-[970px] lg:max-w-[1170px] mx-auto flex items-center justify-center min-h-[40vh]">
-          <BeatLoader color="#e8d5a1b8" />
-        </div>
-      ) : (
-        <div className="max-w-[970px] lg:max-w-[1170px] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-col-3 gap-5">
-          {projects?.map((project) => (
-            <Project key={project?._id} data={project} />
-          ))}
+    <>
+      <div className="px-[20px] w-full -top-[37px] relative mt-10 font-raleway">
+        {isLoading ? (
+          <div className="max-w-[970px] lg:max-w-[1170px] mx-auto flex items-center justify-center min-h-[40vh]">
+            <BeatLoader color="#e8d5a1b8" />
+          </div>
+        ) : (
+          <div className="max-w-[970px] lg:max-w-[1170px] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-col-3 gap-5">
+            {projects?.map((project) => (
+              <Project key={project?._id} data={project} />
+            ))}
 
-          <>
-            {projects.length === 0 && (
-              <div className="col-span-1 sm:col-span-2 md:col-span-3 lg:col-span-3 w-full flex justify-center items-center min-h-[40vh] text-xs font-bold text-[#d8a824b8]">
-                NO RESULTS FOUND
-              </div>
-            )}
-          </>
-        </div>
-      )}
-    </div>
+            <>
+              {projects.length === 0 && (
+                <div className="col-span-1 sm:col-span-2 md:col-span-3 lg:col-span-3 w-full flex justify-center items-center min-h-[40vh] text-xs font-bold text-[#d8a824b8]">
+                  NO RESULTS FOUND
+                </div>
+              )}
+            </>
+          </div>
+        )}
+      </div>
+    </>
   );
 };
 
