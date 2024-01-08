@@ -63,7 +63,7 @@ function MobileView({ open, setOpen }) {
                       
 
                     ))}
-                    {/* <li>
+                    <li>
                         <Link
                           onClick={() => {
                             setOpen(!open);
@@ -74,7 +74,7 @@ function MobileView({ open, setOpen }) {
                         >
                           Penthouse template 
                         </Link>
-                      </li> */}
+                      </li>
                   </ul>
                 </div>
                 <div className="mr-16">
