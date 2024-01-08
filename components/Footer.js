@@ -120,7 +120,7 @@ const Footer = () => {
               </div>
 
               <div className="col-span-12 md:col-span-4 flex flex-col gap-2">
-                <h1 className="heading">Communities</h1>
+                <h1 className="heading">The Maison Terranova</h1>
                 {communities?.map((community) => (
                   <Link href={`/community/${community?._id}`} key={community?._id}>
                     {community?.name}

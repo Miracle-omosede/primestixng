@@ -45,7 +45,7 @@ function MobileView({ open, setOpen }) {
                     <span>
                       <i className="ri-community-line"></i>
                     </span>
-                    <span>communities</span>
+                    <span>The Maison Terranova</span>
                   </Link>
                   <ul className="mobile-list flex flex-col gap-2">
                     {communities?.map((community) => (
@@ -60,7 +60,21 @@ function MobileView({ open, setOpen }) {
                           {community?.name}
                         </Link>
                       </li>
+                      
+
                     ))}
+                    {/* <li>
+                        <Link
+                          onClick={() => {
+                            setOpen(!open);
+                          }}
+                          href="/penthouse"
+                          
+                          className="link-item"
+                        >
+                          Penthouse template 
+                        </Link>
+                      </li> */}
                   </ul>
                 </div>
                 <div className="mr-16">
@@ -94,16 +108,6 @@ function MobileView({ open, setOpen }) {
                       </Link>
                     </li>
                     <li>
-                      <Link
-                        onClick={() => {
-                          setOpen(!open);
-                        }}
-                        href="/"
-                        className="link-item capitalize"
-                      >
-                         Corporate Social Responsibility
-                      </Link>
-                    </li>
                     <li>
                       <Link
                         onClick={() => {
@@ -113,6 +117,16 @@ function MobileView({ open, setOpen }) {
                         className="link-item"
                       >
                         Meet the Team
+                      </Link>
+                    </li>
+                      <Link
+                        onClick={() => {
+                          setOpen(!open);
+                        }}
+                        href="/"
+                        className="link-item capitalize"
+                      >
+                         Corporate Social Responsibility
                       </Link>
                     </li>
                   </ul>
@@ -153,12 +167,12 @@ function MobileView({ open, setOpen }) {
                           href="/projects"
                           className="link-item"
                         >
-                          find properties
+                          FAQ
                         </Link>
                       </li>
                     </ul>
                   </div>
-                  <div className="flex flex-col justify-start items-start mt-5 mr-16">
+                  {/* <div className="flex flex-col justify-start items-start mt-5 mr-16">
                     <Link
                       onClick={() => {
                         setOpen(!open);
@@ -183,7 +197,7 @@ function MobileView({ open, setOpen }) {
                       </span>
                       <span>3d tour</span>
                     </Link>
-                  </div>
+                  </div> */}
                 </div>
               </div>
 
@@ -229,7 +243,7 @@ function MobileView({ open, setOpen }) {
           <div className="md:col-span-6 col-span-0 h-full relative">
             <div className="h-full w-full absolute md:flex hidden items-center justify-center -top-[0rem] left-0">
               <Image
-                src="/home-5.jpg"
+                src="/menu.jpg"
                 width={1000}
                 height={1000}
                 className="w-full h-[70vh]"
@@ -297,7 +311,7 @@ const FullScreenNavbar = () => {
           </Link>
         </div>
 
-        <Link href={`/projects`} className="relative block">
+        {/* <Link href={`/projects`} className="relative block">
           <div className="border rounded overflow-hidden hidden md:flex">
             <input type="text" className="px-4 py-2" placeholder="Search..." />
             <button className="flex items-center justify-center px-4 border-l">
@@ -311,11 +325,11 @@ const FullScreenNavbar = () => {
               </svg>
             </button>
           </div>
-        </Link>
+        </Link> */}
 
         <div className="flex">
           <div className="">
-            <ul className="flex items-center justify-center gap-4">
+            {/* <ul className="flex items-center justify-center gap-4">
               <li className="md:flex items-center justify-center hidden">
                 <button
                   className="flex items-center openModalBtn"
@@ -361,7 +375,7 @@ const FullScreenNavbar = () => {
                   </span>
                 </button>
 
-                {/* dropdown when the language column is open */}
+              
                 {isOpen && (
                   <div className="mt-4 bg-gray-200 absolute font-semibold">
                     <ul className="flex flex-col">
@@ -374,6 +388,33 @@ const FullScreenNavbar = () => {
                     </ul>
                   </div>
                 )}
+              </li>
+            </ul> */}
+            <ul className="flex items-center justify-center gap-6">
+              <li>
+                <Link href="/" className="md:flex hidden items-center hover:text-[#A18830] ease-in-out transition">
+                  <span className="uppercase font-[500]">Home</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/projects" className="md:flex hidden items-center hover:text-[#A18830] ease-in-out transition">
+                  <span className="uppercase font-[500]">Projects</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/about" className="md:flex hidden items-center hover:text-[#A18830] ease-in-out transition">
+                  <span className="uppercase font-[500]">About Primestix</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/team" className="md:flex hidden items-center hover:text-[#A18830] ease-in-out transition">
+                  <span className="uppercase font-[500]">Meet the Team</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/" className="md:flex hidden items-center hover:text-[#A18830] ease-in-out transition">
+                  <span className="uppercase font-[500]">Media</span>
+                </Link>
               </li>
             </ul>
           </div>

@@ -102,13 +102,14 @@ export default function HeroSlider() {
                 variants={textVariant(1.1)}
                 className="uppercase font-bold text-5xl text-left z-10"
               >
-                Insights
+                 Design
               </motion.h1>
               <motion.p
                 variants={textVariant(1.2)}
-                className="md:text-2xl capitalize z-10"
+                className="md:text-2xl capitalize z-10 md:w-full w-[70%]"
               >
-                Local Insight, Global Expertise
+                We elevate every project with innovative
+and aesthetic brilliance, ensuring a unique and captivating experience.
               </motion.p>
               <Button className="z-10" />
             </motion.div>
@@ -161,14 +162,15 @@ export default function HeroSlider() {
                 variants={textVariant(1.1)}
                 className="uppercase font-bold text-5xl text-left"
               >
-                Build your dream.
+                 Automate
               </motion.h1>
               <motion.p
                 variants={textVariant(1.2)}
-                className="md:text-2xl capitalize text-left"
+                className="md:text-2xl capitalize text-left md:w-full w-[70%]"
               >
-                Building Dreams, One Home
-                <br /> at a Time
+                We embrace cutting-edge technology
+and streamlined processes to enhance efficiency.
+               
               </motion.p>
               <Button className="z-10" />
             </motion.div>
@@ -221,14 +223,15 @@ export default function HeroSlider() {
                 variants={textVariant(1.1)}
                 className="uppercase font-bold text-5xl text-left"
               >
-                Commited <br />
-                to you
+                Disrupt
               </motion.h1>
               <motion.p
                 variants={textVariant(1.2)}
-                className="md:text-2xl capitalize "
+                className="md:text-2xl capitalize md:w-full w-[70%] "
               >
-                Your Goals, Our Commitment
+                We challenge norms and push boundaries to
+create groundbreaking solutions, setting new benchmarks and Unleashing a
+new era in real estate construction.
               </motion.p>
               <Button className="z-10" />
             </motion.div>

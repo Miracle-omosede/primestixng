@@ -34,9 +34,9 @@ const Founder = () => {
         <>
           <div className="mb-20">
             <div className="bg-black mt-20">
-              <div className="flex flex-col font-raleway max-w-[1100px] w-full mx-auto px-5 md:px-0 py-20 items-center justify-center text-center">
+              <div className="flex flex-col font-raleway max-w-[1100px] w-full mx-auto px-5 md:px-0 py-20 justify-center">
                 <div className="text-white">
-                  <h1 className="text-4xl font-semibold">About PRIMESTIX</h1>
+                  <h1 className="text-4xl font-semibold">About Primestix</h1>
                   <p className="capitalize text-2xl w-full text-gray-400 md:text-2xl">
                     Founder&apos;s message
                   </p>
@@ -69,7 +69,7 @@ const Founder = () => {
                   </div>
                   <div className="md:col-span-12 col-span-12 flex flex-col">
                     {/* Founder message */}
-                    <p className="text-center">
+                    <p>
                       <b className="text-xl py-2">Dear Friends and Future Homeowners,</b>
                       <br />
                       Welcome! Ndewo!! Ekaabo!!! Barka Da Zuwa!!!!
