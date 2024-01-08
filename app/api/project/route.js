@@ -14,10 +14,14 @@ export async function GET(req) {
     // the user sends nothing.
 
     const searchTerm = searchParams.get("search");
-    const country = searchParams.get("country");
-    const projectType = searchParams.get("project_type");
+
     const orderOfItems = searchParams.get("orderOfItems");
-    const selectedCity = searchParams.get("city");
+
+    const location = searchParams.get("location");
+    const buildingType = searchParams.get("buildingType");
+    const bedroomsNumber = searchParams.get("bedroomsNumber");
+
+    console.log(orderOfItems);
 
     // This is the complex sanity query that fetches an array of objects
     // based on some provided search parameters.
@@ -29,12 +33,14 @@ export async function GET(req) {
 
     const querySearch = `*[_type == 'project' && 
       (name match $searchTerm || 
-      description match $searchTerm || 
-      location match $searchTerm)${
-        country ? ` && country->name match $country` : ""
-      }${projectType ? ` && projectType match $projectType` : ""}${
-      selectedCity ? ` && city->name match $selectedCity` : ""
-    }] | order(${orderOfItems})  {
+      description match $searchTerm)
+      ${location ? ` && location->name match $location` : ""}
+      ${buildingType ? ` && buildingType->name match $buildingType` : ""}
+      ${
+        bedroomsNumber
+          ? ` && bedroomsNumber->numberOfRooms == ${bedroomsNumber}`
+          : ""
+      }] | order(${orderOfItems})  {
       _id,
       name,
       city->{name},
@@ -45,7 +51,6 @@ export async function GET(req) {
           url
         }
       },
-      location,
       projectType,
       country->{name},
       long,
@@ -65,9 +70,8 @@ export async function GET(req) {
 
     const projects = await sanityClient.fetch(querySearch, {
       searchTerm: `${searchTerm}*`,
-      country: `${country}*`,
-      projectType: `${projectType}*`,
-      selectedCity: `${selectedCity}*`,
+      buildingType: `${buildingType}*`,
+      location: `${location}*`,
     });
 
     return NextResponse.json(projects, { status: 200 });

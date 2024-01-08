@@ -6,8 +6,9 @@ import React, { useEffect, useState } from "react";
 import { useDebouncedCallback } from "use-debounce";
 
 import { useFilter } from "@/hooks/useFilter";
-import { getAllCities } from "@/actions/getAllCities.";
-import { getAllCountries } from "@/actions/getCountries";
+import { getBedroomsNumber } from "@/actions/getBedroomsNumber";
+import { getBuildingType } from "@/actions/getBuildingType";
+import { getLocation } from "@/actions/getLocation";
 
 // Here is where all the client filtering logic happens!
 // I don't think you'll have to bother much about this component, but feel free!
@@ -16,15 +17,18 @@ import { getAllCountries } from "@/actions/getCountries";
 const Filter = () => {
   const filter = useFilter();
 
-  const [cities, setCities] = useState([]);
-  const [countries, setCountries] = useState([]);
+  const [locations, setLocations] = useState([]);
+  const [buildingTypes, setBuildingTypes] = useState([]);
+  const [bedroomsNumbers, setBedroomsNumbers] = useState([]);
 
   // local state variables
   // because of the button that updates the UI
   const [search, setSearch] = useState("");
-  const [country, setCountry] = useState("");
-  const [project_type, setProjectType] = useState("");
-  const [city, setCity] = useState("");
+  
+
+  const [location, setLocation] = useState("");
+  const [buildingType, setBuildingType] = useState("");
+  const [bedroomsNumber, setBedroomsNumber] = useState("");
 
   const [collapsedSelectOptions, setCollapsedSelectOptions] = useState(false);
 
@@ -32,15 +36,18 @@ const Filter = () => {
     setSearch(e.target.value);
   }, 500);
 
-  const handleProjectType = (e) => {
-    setProjectType(e.target.value);
-  };
-  const handleCountries = (e) => {
-    setCountry(e.target.value);
+  
+
+  const handleLocation = (e) => {
+    setLocation(e.target.value);
   };
 
-  const handleCity = (e) => {
-    setCity(e.target.value);
+  const handleBuildingType = (e) => {
+    setBuildingType(e.target.value);
+  };
+
+  const handleBedroomsNumber = (e) => {
+    setBedroomsNumber(e.target.value);
   };
 
   const handleRemoveAllFilter = (e) => {
@@ -54,25 +61,28 @@ const Filter = () => {
   const onHandleSubmit = (e) => {
     e.preventDefault();
     filter.addSearch({ search });
-    filter.addProjectType({ project_type });
-    filter.addCountry({ country });
-    filter.addCity({ city });
+
+    filter.addLocation({ location });
+    filter.addBuildingType({ buildingType });
+    filter.addBedroomsNumber({ bedroomsNumber });
   };
 
-  console.log(city);
+  
 
   useEffect(() => {
     const fetchAllCitiesAndCountries = async () => {
-      const cityData = await getAllCities();
-      const countryData = await getAllCountries();
+      
+      const bedroomsData = await getBedroomsNumber();
+      const buildingTypeData = await getBuildingType();
+      const locationData = await getLocation();
 
-      setCities(cityData);
-      setCountries(countryData);
+      setBedroomsNumbers(bedroomsData);
+      setBuildingTypes(buildingTypeData);
+      setLocations(locationData);
     };
     fetchAllCitiesAndCountries();
   }, []);
 
-  console.log(country);
 
   return (
     <div>
@@ -125,44 +135,38 @@ const Filter = () => {
 
             <div className="max-w-[1070px] mx-auto py-[10px] max-h-[400px] flex md:flex-row flex-col font-raleway gap-3">
               {/* All of these select options are hardcoded but provisions are made for them in the sanity schema / db */}
-              <select className="all-select" onChange={handleProjectType}>
-                <option value={""}>Project Type</option>
-                <option value={"furnished_apartment"}>
-                  Furnished apartment
-                </option>
-                <option value={"hotel_apartment"}>Hotel apartment</option>
-                <option value={"hotel_rooms"}>Hotel rooms</option>
-                <option value={"offices"}>Offices</option>
+              <select className="all-select" onChange={handleBuildingType}>
+                <option value={""}>Building Types</option>
+                {buildingTypes?.map((building) => (
+                  <option key={building?._id} value={building?.name}>
+                    {building?.name}
+                  </option>
+                ))}
               </select>
-              <select className="all-select" onChange={handleCountries}>
-                <option value={""}>All counties</option>
-                {countries?.map((country) => (
-                  <option key={country._id} value={country?.name}>
-                    {country?.name}
+              <select className="all-select" onChange={handleLocation}>
+                <option value={""}>All locations</option>
+                {locations?.map((location) => (
+                  <option key={location._id} value={location?.name}>
+                    {location?.name}
                   </option>
                 ))}
               </select>
               <select
                 className="all-select disabled:opacity-50"
                 // disabled={true}
-                onChange={handleCity}
+                onChange={handleBedroomsNumber}
               >
-                <option value={""}>All cities</option>
-                {cities?.map((city) => (
-                  <option key={city?._id} value={city?.name}>
-                    {city?.name}
+                <option value={""}>No of Bedrooms</option>
+                {bedroomsNumbers?.map((bedroomNum) => (
+                  <option
+                    key={bedroomNum?._id}
+                    value={bedroomNum?.numberOfRooms}
+                  >
+                    {bedroomNum?.numberOfRooms}
                   </option>
                 ))}
               </select>
-              <select
-                className="all-select disabled:opacity-50"
-                disabled={true}
-              >
-                <option value={""}>All area</option>
-                <option value={"dubai"}>Dubai</option>
-                <option value={"kuwait"}>Kuwait</option>
-                <option value={"turkey"}>Turkey</option>
-              </select>
+              
             </div>
             <div
               className="cursor-pointer"

@@ -6,25 +6,27 @@ import { create } from "zustand";
 export const useFilter = create((set, get) => ({
   searchData: {
     search: "",
-    country: "",
-    project_type: "",
     orderOfItems: "createdAt asc",
-    city: ""
+    location: "",
+    buildingType: "",
+    bedroomsNumber: "",
   },
   addSearch: (search) => {
     const prev = get().searchData;
 
     set({ searchData: { ...prev, ...search } });
   },
-  addCountry: (country) => {
+  addLocation: (location) => {
     const prev = get().searchData;
-
-    set({ searchData: { ...prev, ...country } });
+    set({ searchData: { ...prev, ...location } });
   },
-  addCity: (city) => {
+  addBuildingType: (buildingType) => {
     const prev = get().searchData;
-
-    set({ searchData: { ...prev, ...city } });
+    set({ searchData: { ...prev, ...buildingType } });
+  },
+  addBedroomsNumber: (bedroomsNumber) => {
+    const prev = get().searchData;
+    set({ searchData: { ...prev, ...bedroomsNumber } });
   },
 
   addProjectType: (project_type) => {
@@ -42,8 +44,9 @@ export const useFilter = create((set, get) => ({
     set({
       searchData: {
         search: "",
-        country: "",
-        project_type: "",
+        location: "",
+        buildingType: "",
+        bedroomsNumber: "",
       },
     });
   },
