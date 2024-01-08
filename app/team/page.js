@@ -2,6 +2,32 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link"; 
 
+  const slides = [
+    {
+      url: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGhvdGVsfGVufDB8fDB8fHww"
+    },
+    {
+      url: "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      url: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGhvdGVsfGVufDB8fDB8fHww"
+    },
+    {
+      url: "https://images.unsplash.com/photo-1564501049412-61c2a3083791?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      url: "https://images.unsplash.com/photo-1445019980597-93fa8acb246c?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    }
+  ];
+
+  const SliderItem = () => {
+    return (
+      <div className="max-w-[1400px] h-[780px] w-full m-auto py-16 px-4 relative">
+        <div className="w-full h-full rounded-2xl bg-center bg-cover durati"></div>
+      </div>
+    )
+  }
+
 const Page = () => {
   return (
     <div className="font-raleway">
@@ -28,7 +54,6 @@ const Page = () => {
           <div className="md:col-span-4 col-span-12">
             {" "}
             <div className="w-[250px] h-[370px] perspective bg-transparent cursor-pointer group">
-        <Link href="/first-bio">
         <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000 shadow-xl">
                 <div className="absolute border-2 w-full h-full">
                   <Image
@@ -67,8 +92,7 @@ const Page = () => {
                   </div>
                 </div>
               </div>
-        </Link>
-            </div> 
+            </div>
           </div>
        
           <div className="md:col-span-4 col-span-12">

@@ -164,7 +164,7 @@ function MobileView({ open, setOpen }) {
                           onClick={() => {
                             setOpen(!open);
                           }}
-                          href="/projects"
+                          href="/faq"
                           className="link-item"
                         >
                           FAQ
