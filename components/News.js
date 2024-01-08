@@ -100,7 +100,12 @@ const News = () => {
                     {/* Here */}
                     <FormattedDate createdAt={n?._createdAt} />
                     <div>
-                      <a className="news__title">{n?.title}</a>
+                    <a className="news__title">
+  {n?.title && n.title.length > 20 /* Adjust the character limit as needed */
+    ? `${n.title.substring(0, 20)}...`
+    : n?.title}
+</a>
+
                     </div>
 
                     <p className="news__txt">

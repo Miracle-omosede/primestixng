@@ -45,6 +45,9 @@ export default function Home() {
       clearTimeout(videoLoadingTimeout);
       clearTimeout(preloaderTimeout);
     };
+
+
+    
   }, []);
   // Add this useEffect to start playing the video when it's loaded
 
@@ -92,7 +95,6 @@ export default function Home() {
                 }}
                 className="loading-indicator text-black flex items-center justify-center absolute top-0 left-0 right-0 bottom-0"
               >
-                {/* turing.com */}
                 {!videoHasBeenSeen && (
                   <Image
                     src="/horizontal-logo-removebg-preview.png"

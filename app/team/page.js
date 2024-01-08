@@ -1,8 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
- 
-// import ScrollToTop from "react-scroll-up";
+import Link from "next/link"; 
+
 const Page = () => {
   return (
     <div className="font-raleway">
@@ -43,7 +42,7 @@ const Page = () => {
                     <button className="absolute bottom-10 py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col w-auto rounded-[50px] items-center justify-center bg-white text-[#A18830]">
                     <span>Maxwell Okperi</span>
                     <span className="text-xs italic">
-                      Chief Executive Officer
+                      Chief Executive Officer/Founding Partner
                     </span>
                     </button>
                   </div>
@@ -61,7 +60,7 @@ const Page = () => {
                       <button className=" py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col rounded-[50px] items-center justify-center bg-white text-[#A18830]">
                       <span>Maxwell Okperi</span>
                     <span className="text-xs italic">
-                      Chief Executive Officer
+                      Chief Executive Officer/Founding Partner
                     </span>
                       </button>
                     </div>
@@ -133,8 +132,7 @@ const Page = () => {
                   />
                   <div className="w-full flex items-center justify-center">
                     <button className="absolute bottom-10 py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col w-auto rounded-[50px] items-center justify-center bg-white text-[#A18830]">
-                    <span>NGOZI AKUBUEZE
-</span>
+                    <span>NGOZI AKUBUEZE</span>
                         <span className="text-xs italic">
                           Head, People Operations & Administration
                         </span>
@@ -152,8 +150,7 @@ const Page = () => {
                     />
                     <div className="absolute -bottom-10 delay-500 duration-1000 group-hover:bottom-10 scale-0 group-hover:scale-125 text-white">
                       <button className=" py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col rounded-[50px] items-center justify-center bg-white text-[#A18830]">
-                        <span>NGOZI AKUBUEZE
-</span>
+                        <span>NGOZI AKUBUEZE</span>
                         <span className="text-xs italic">
                           Head, People Operations & Administration
                         </span>
@@ -169,7 +166,92 @@ const Page = () => {
         </div>
         <div className="grid grid-cols-12 gap-3">
           
-          
+        <div className="md:col-span-4 col-span-12">
+            {" "}
+            <div className="w-[250px] h-[370px] perspective bg-transparent cursor-pointer group">
+              <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000 shadow-xl">
+                <div className="absolute border-2 w-full h-full">
+                  <Image
+                    alt=""
+                    src="/staffs/IMG--2.jpg"
+                    width={500}
+                    height={400}
+                    className="object-cover w-full h-full"
+                  />
+                  <div className="w-full flex items-center justify-center">
+                  <button className="absolute bottom-10 py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col w-auto rounded-[50px] items-center justify-center bg-white text-[#A18830]">
+                    <span>NGOZI AKUBUEZE</span>
+                        <span className="text-xs italic">
+                          Head, People Operations & Administration
+                        </span>
+                    </button>
+                  </div>
+                </div>
+                <div className="absolute overflow-hidden  my-rotate-y-180 backface-hidden w-full h-full bg-gray-100">
+                  <div className="text-center flex flex-col items-center justify-center h-full">
+                    <Image
+                      alt=""
+                      src="/staffs/casual/img-15.jpg"
+                      width={500}
+                      height={400}
+                      className="object-cover w-full h-full"
+                    />
+                   <button className="py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col rounded-[50px] items-center justify-center bg-white text-[#A18830]">
+                   <span>OMOLANKE TEMITAYO ONI
+                                                </span>
+                      <span className="text-xs italic">
+                      Head of Legal and Regulatory Compliance 
+                      </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="md:col-span-4 col-span-12">
+            {" "}
+            <div className="w-[250px] h-[370px] perspective bg-transparent cursor-pointer group">
+              <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000 shadow-xl">
+                <div className="absolute border-2 w-full h-full">
+                  <Image
+                    alt=""
+                    src="/staffs/IMG--9.jpg"
+                    width={500}
+                    height={400}
+                    className="object-cover w-full h-full"
+                  />
+                  <div className="w-full flex items-center justify-center">
+                    <button className="absolute bottom-10 py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col w-auto rounded-[50px] items-center justify-center bg-white text-[#A18830]">
+                    <span>Odey Lilian Chinwe</span>
+                        <span className="text-xs italic">
+                          Head of Finance
+                        </span>
+                    </button>
+                  </div>
+                </div>
+                <div className="absolute overflow-hidden  my-rotate-y-180 backface-hidden w-full h-full bg-gray-100">
+                  <div className="text-center flex flex-col items-center justify-center h-full">
+                    <Image
+                      alt=""
+                      src="/staffs/casual/img-9.jpg"
+                      width={500}
+                      height={400}
+                      className="object-cover w-full h-full"
+                    />
+                    <div className="absolute -bottom-10 delay-500 duration-1000 group-hover:bottom-10 scale-0 group-hover:scale-125 text-white">
+                      <button className=" py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col rounded-[50px] items-center justify-center bg-white text-[#A18830]">
+                        <span>Odey Lilian Chinwe</span>
+                        <span className="text-xs italic">
+                          Head of Finance
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="md:col-span-4 col-span-12">
             {" "}
             <div className="w-[250px] h-[370px] perspective bg-transparent cursor-pointer group">
@@ -218,7 +300,7 @@ const Page = () => {
         </div>
 
         <div className="font-raleway">
-            <h1 className="font-bold md:text-4xl text-2xl">The Team</h1>
+            <h1 className="font-bold md:text-4xl text-2xl">Disruptors</h1>
           </div>
 
         <div className="grid grid-cols-12 gap-3">
@@ -253,12 +335,12 @@ const Page = () => {
                       className="object-cover w-full h-full"
                     />
                     <div className="absolute -bottom-10 delay-500 duration-1000 group-hover:bottom-10 scale-0 group-hover:scale-125 text-white">
-                      {/* <button className=" py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col rounded-[50px] items-center justify-center bg-white text-[#A18830]">
-                        <span>Nnadi Johnson</span>
-                        <span className="text-xs italic">
+                      <button className=" py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col rounded-[50px] items-center justify-center bg-white text-[#A18830]">
+                        <span>Gideon Olaleye</span>
+                        {/* <span className="text-xs italic">
                           Chief Executive Officer
-                        </span>
-                      </button> */}
+                        </span> */}
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -296,12 +378,12 @@ const Page = () => {
                       className="object-cover w-full h-full"
                     />
                     <div className="absolute -bottom-10 delay-500 duration-1000 group-hover:bottom-10 scale-0 group-hover:scale-125 text-white">
-                      {/* <button className=" py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col rounded-[50px] items-center justify-center bg-white text-[#A18830]">
-                        <span>Nnadi Johnson</span>
-                        <span className="text-xs italic">
+                      <button className=" py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col rounded-[50px] items-center justify-center bg-white text-[#A18830]">
+                        <span>Raphael Edet Okon</span>
+                        {/* <span className="text-xs italic">
                           Chief Executive Officer
-                        </span>
-                      </button> */}
+                        </span> */}
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -393,49 +475,7 @@ const Page = () => {
               </div>
             </div>
           </div>
-          <div className="md:col-span-4 col-span-12">
-            {" "}
-            <div className="w-[250px] h-[370px] perspective bg-transparent cursor-pointer group">
-              <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000 shadow-xl">
-                <div className="absolute border-2 w-full h-full">
-                  <Image
-                    alt=""
-                    src="/staffs/IMG--9.jpg"
-                    width={500}
-                    height={400}
-                    className="object-cover w-full h-full"
-                  />
-                  <div className="w-full flex items-center justify-center">
-                    <button className="absolute bottom-10 py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col w-auto rounded-[50px] items-center justify-center bg-white text-[#A18830]">
-                      {/* <span>Nnadi Johnson</span>
-                      <span className="text-xs italic">
-                        Chief Executive Officer
-                      </span> */}
-                    </button>
-                  </div>
-                </div>
-                <div className="absolute overflow-hidden  my-rotate-y-180 backface-hidden w-full h-full bg-gray-100">
-                  <div className="text-center flex flex-col items-center justify-center h-full">
-                    <Image
-                      alt=""
-                      src="/staffs/casual/img-9.jpg"
-                      width={500}
-                      height={400}
-                      className="object-cover w-full h-full"
-                    />
-                    <div className="absolute -bottom-10 delay-500 duration-1000 group-hover:bottom-10 scale-0 group-hover:scale-125 text-white">
-                      <button className=" py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col rounded-[50px] items-center justify-center bg-white text-[#A18830]">
-                        {/* <span>Nnadi Johnson</span>
-                        <span className="text-xs italic">
-                          Chief Executive Officer
-                        </span> */}
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+      
           <div className="md:col-span-4 col-span-12">
             {" "}
             <div className="w-[250px] h-[370px] perspective bg-transparent cursor-pointer group">
@@ -568,53 +608,10 @@ const Page = () => {
             </div>
           </div>
 
-          <div className="md:col-span-4 col-span-12">
-            {" "}
-            <div className="w-[250px] h-[370px] perspective bg-transparent cursor-pointer group">
-              <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000 shadow-xl">
-                <div className="absolute border-2 w-full h-full">
-                  <Image
-                    alt=""
-                    src="/staffs/IMG--2.jpg"
-                    width={500}
-                    height={400}
-                    className="object-cover w-full h-full"
-                  />
-                  <div className="w-full flex items-center justify-center">
-                    <button className="absolute bottom-10 py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col w-auto rounded-[50px] items-center justify-center bg-white text-[#A18830]">
-                      <span>Angelfortune Ogbeta</span>
-                      <span className="text-xs italic">
-                        Content Writer
-                      </span>
-                    </button>
-                  </div>
-                </div>
-                <div className="absolute overflow-hidden  my-rotate-y-180 backface-hidden w-full h-full bg-gray-100">
-                  <div className="text-center flex flex-col items-center justify-center h-full">
-                    <Image
-                      alt=""
-                      src="/staffs/casual/img-15.jpg"
-                      width={500}
-                      height={400}
-                      className="object-cover w-full h-full"
-                    />
-                    <div className="absolute -bottom-10 delay-500 duration-1000 group-hover:bottom-10 scale-0 group-hover:scale-125 text-white">
-                      <button className=" py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col rounded-[50px] items-center justify-center bg-white text-[#A18830]">
-                      <span>Angelfortune Ogbeta</span>
-                      <span className="text-xs italic">
-                        Content Writer
-                      </span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+         
      
         </div>
       </div>
-    </div>
   );
 };
 

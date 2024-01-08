@@ -20,17 +20,13 @@ const Navigation = () => {
             <span> Email </span>
           </li>
 
-          <li
-            className={`flex items-center flex-col cursor-pointer relative`}
-            onClick={() => handleItemClick(1)} // Provide an appropriate index
-          >
-            <Link
+            {/* <Link
               href="/"
               className="flex flex-col items-center justify-center "
             >
               <i className="ri-home-line"></i>
               <span> Home </span>
-            </Link>
+            </Link> */}
             {/* Dropdown content */}
             {/* {dropdownVisible === 1 && (
             <div className="absolute -top-[120px] text-center w-[150px] text-xs bg-white p-2 shadow-md">
@@ -46,7 +42,6 @@ const Navigation = () => {
               </ul>
             </div>
           )} */}
-          </li>
           <li
             className={`flex items-center flex-col cursor-pointer relative`}
             onClick={() => handleItemClick(1)} // Provide an appropriate index
