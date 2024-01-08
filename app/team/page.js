@@ -1,8 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
- 
-// import ScrollToTop from "react-scroll-up";
+import Link from "next/link"; 
+
 const Page = () => {
   return (
     <div className="font-raleway">
@@ -133,8 +132,7 @@ const Page = () => {
                   />
                   <div className="w-full flex items-center justify-center">
                     <button className="absolute bottom-10 py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col w-auto rounded-[50px] items-center justify-center bg-white text-[#A18830]">
-                    <span>NGOZI AKUBUEZE
-</span>
+                    <span>NGOZI AKUBUEZE</span>
                         <span className="text-xs italic">
                           Head, People Operations & Administration
                         </span>
@@ -152,8 +150,7 @@ const Page = () => {
                     />
                     <div className="absolute -bottom-10 delay-500 duration-1000 group-hover:bottom-10 scale-0 group-hover:scale-125 text-white">
                       <button className=" py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col rounded-[50px] items-center justify-center bg-white text-[#A18830]">
-                        <span>NGOZI AKUBUEZE
-</span>
+                        <span>NGOZI AKUBUEZE</span>
                         <span className="text-xs italic">
                           Head, People Operations & Administration
                         </span>
@@ -182,13 +179,12 @@ const Page = () => {
                     className="object-cover w-full h-full"
                   />
                   <div className="w-full flex items-center justify-center">
-                  <button className=" py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col rounded-[50px] items-center justify-center bg-white text-[#A18830]">
-                      <span>OMOLANKE TEMITAYO ONI
-</span>
-                      <span className="text-xs italic">
-                      Head of Legal and Regulatory Compliance 
-                      </span>
-                      </button>
+                  <button className="absolute bottom-10 py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col w-auto rounded-[50px] items-center justify-center bg-white text-[#A18830]">
+                    <span>NGOZI AKUBUEZE</span>
+                        <span className="text-xs italic">
+                          Head, People Operations & Administration
+                        </span>
+                    </button>
                   </div>
                 </div>
                 <div className="absolute overflow-hidden  my-rotate-y-180 backface-hidden w-full h-full bg-gray-100">
@@ -200,10 +196,9 @@ const Page = () => {
                       height={400}
                       className="object-cover w-full h-full"
                     />
-                    <div className="absolute -bottom-10 delay-500 duration-1000 group-hover:bottom-10 scale-0 group-hover:scale-125 text-white">
-                      <button className=" py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col rounded-[50px] items-center justify-center bg-white text-[#A18830]">
-                      <span>OMOLANKE TEMITAYO ONI
-</span>
+                   <button className="py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col rounded-[50px] items-center justify-center bg-white text-[#A18830]">
+                   <span>OMOLANKE TEMITAYO ONI
+                                                </span>
                       <span className="text-xs italic">
                       Head of Legal and Regulatory Compliance 
                       </span>
@@ -617,7 +612,6 @@ const Page = () => {
      
         </div>
       </div>
-    </div>
   );
 };
 
