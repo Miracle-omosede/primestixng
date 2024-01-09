@@ -16,8 +16,10 @@ const Navigation = () => {
       <div className="bg-white z-[9999] font-raleway fixed bottom-0 w-full h-[60px] my-auto items-center justify-center flex font-semibold capitalize">
         <ul className="display flex w-full justify-around items-center">
           <li className={`flex items-center flex-col cursor-pointer relative`}>
-            <i className="ri-mail-line"></i>
+        <a className={`flex items-center flex-col cursor-pointer relative`} href="mailto:info@primestixng.com">
+        <i className="ri-mail-line"></i>
             <span> Email </span>
+        </a>
           </li>
 
             {/* <Link
@@ -46,8 +48,11 @@ const Navigation = () => {
             className={`flex items-center flex-col cursor-pointer relative`}
             onClick={() => handleItemClick(1)} // Provide an appropriate index
           >
+            <a className={`flex items-center flex-col cursor-pointer relative`} href="https://wa.me/2349061699611
+" >
             <i className="ri-whatsapp-line"></i>
             <span> WhatsApp </span>
+            </a>
 
             {/* Dropdown content */}
             {/* {dropdownVisible === 1 && (
@@ -69,8 +74,11 @@ const Navigation = () => {
             className={`flex items-center flex-col cursor-pointer relative`}
             onClick={() => handleItemClick(2)} // Provide an appropriate index
           >
+                   <a className={`flex items-center flex-col cursor-pointer relative`} href="tel:2349160629000
+" >
             <i className="ri-phone-line"></i>
             <span> Call </span>
+            </a>
 
             {/* Dropdown content */}
             {/* {dropdownVisible === 2 && (

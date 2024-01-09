@@ -114,7 +114,7 @@ const Footer = () => {
                 <h1 className="heading">Why PRIMESTIX?</h1>
                 <Link href="/about">About Primestix</Link>
                 <Link href="/founder">Founder&apos;s Message</Link>
-                <Link href="/">Careers</Link>
+                <Link href="/career">Careers</Link>
               </div>
 
               <div className="col-span-12 md:col-span-4 flex flex-col gap-2">

@@ -46,9 +46,9 @@ const Founder = () => {
             <div 
             >
 
-              <div className="w-full h-full md:absolute fixed top-[10%] md:top-[49%] opacity-40">
+              <div className="w-full h-full md:absolute fixed top-[10%] md:top-[47%] opacity-40">
               <Image
-                          className="w-full relative object-cover h-full md:h-auto"
+                          className="w-full relative object-cover h-full md:h-[1200px]"
                           src="/founders.png"
                           width={1000}
                           height={1000}
