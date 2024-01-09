@@ -120,3 +120,10 @@
 p {
   text-align: justify;
 }
+
+.bg-founders-image {
+  background-image: url("/public/founders.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -33,7 +33,7 @@ const Featured =  () => {
         >
           <motion.h1
             variants={fadeIn("up", "tween", 0.2, 1)}
-            className="primary-heading text-center capitalize font-[600] leading-8"
+            className="primary-heading font-raleway text-center capitalize font-[600] leading-8"
           >
             Redefining Real Estate.
             <span className="leading-3"> A new era in property development.</span>

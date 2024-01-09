@@ -59,7 +59,7 @@ const About = () => {
         <p className="py-5">
           Introducing <b>Primestix</b>, where Design meets innovation,
           Automation transforms living, and Disruption reshapes the future. Our
-          mantra,<blockquote>Design, Automate, Disrupt,</blockquote> isn&apos;t
+          mantra, <quote>Design, Automate, Disrupt,</quote> isn&apos;t
           just a slogan—it&apos;s our very essence.<br/><br/> At Primestix, we reset the
           boundaries of luxury living, setting new standards that are not just
           timeless but revolutionary. We don&apos;t just build homes; we craft

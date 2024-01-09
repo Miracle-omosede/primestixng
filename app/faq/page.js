@@ -136,7 +136,7 @@ welcome to visit our office located at 19, Philip Shaibu Crescent, Wuye, Abuja.
 <b>How do I subscribe to a fully automated housing unit, and what are the payment terms?</b><br/>
 For more information on how to subscribe to the Maison Terranova or any of Primestix’ Development 
 Projects, please reach out to the:<br/>
-Head of Sales and Marketing on 080XXXXXXXX <br/>
+Head of Sales and Marketing on 09160629000 <br/>
 Email: SalesandMarketing@Primestixng.com <br/>
 Address: 19, Philip Shaibu Crescent, Wuye District, Abuja
 <br/><br/>

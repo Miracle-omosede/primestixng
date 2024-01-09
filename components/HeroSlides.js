@@ -106,7 +106,7 @@ export default function HeroSlider() {
               </motion.h1>
               <motion.p
                 variants={textVariant(1.2)}
-                className="md:text-2xl capitalize z-10 md:w-full w-[70%]"
+                className="md:text-2xl  z-10 md:w-full w-[70%]"
               >
                 We elevate every project with innovative
 and aesthetic brilliance, ensuring a unique and captivating experience.
@@ -144,12 +144,12 @@ and aesthetic brilliance, ensuring a unique and captivating experience.
           <div className="home__shadow"></div>
         </div>
         <div className="h-full w-full relative">
-          <Image
+          {/* <Image
             alt=""
             className="slightly-zoomed-image object-cover"
             layout="fill"
             src="/landing2.jpg"
-          />
+          /> */}
           <div className="absolute z-10 text-white top-0 flex flex-col md:grid grid-cols-12 justify-center md:items-center w-full h-full left-[10%]">
             <motion.div
               variants={staggerContainer}
@@ -166,7 +166,7 @@ and aesthetic brilliance, ensuring a unique and captivating experience.
               </motion.h1>
               <motion.p
                 variants={textVariant(1.2)}
-                className="md:text-2xl capitalize text-left md:w-full w-[70%]"
+                className="md:text-2xl  text-left md:w-full w-[70%]"
               >
                 We embrace cutting-edge technology
 and streamlined processes to enhance efficiency.
@@ -227,7 +227,7 @@ and streamlined processes to enhance efficiency.
               </motion.h1>
               <motion.p
                 variants={textVariant(1.2)}
-                className="md:text-2xl capitalize md:w-full w-[70%] "
+                className="md:text-2xl  md:w-full w-[70%] "
               >
                 We challenge norms and push boundaries to
 create groundbreaking solutions, setting new benchmarks and Unleashing a
