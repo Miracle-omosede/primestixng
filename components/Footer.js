@@ -127,15 +127,18 @@ const Footer = () => {
               </div>
 
               <div className="col-span-12 md:col-span-4 flex flex-col gap-2">
-                <h1 className="heading">Latest Launch</h1>
-                <Link href="/news">
-                    News
+                <h1 className="heading">Projects</h1>
+                <Link href="/projects">
+                    All Projects
                   </Link>
-                {projects?.map((project) => (
+                <Link href="/projects">
+                    FAQ
+                  </Link>
+                {/* {projects?.map((project) => (
                   <Link key={project._id} href={`/projects/${project._id}`}>
                     {project?.name}
                   </Link>
-                ))}
+                ))} */}
               </div>
 
               

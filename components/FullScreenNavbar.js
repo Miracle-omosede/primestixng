@@ -141,7 +141,7 @@ function MobileView({ open, setOpen }) {
                           onClick={() => {
                             setOpen(!open);
                           }}
-                          href="/projects"
+                          href="/categoryselector"
                           className="link-item"
                         >
                           all projects
@@ -385,7 +385,7 @@ const FullScreenNavbar = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/projects" className="md:flex hidden items-center hover:text-[#A18830] ease-in-out transition">
+                <Link href="/categoryselector" className="md:flex hidden items-center hover:text-[#A18830] ease-in-out transition">
                   <span className="uppercase font-[500]">Projects</span>
                 </Link>
               </li>
@@ -400,7 +400,7 @@ const FullScreenNavbar = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/" className="md:flex hidden items-center hover:text-[#A18830] ease-in-out transition">
+                <Link href="/news" className="md:flex hidden items-center hover:text-[#A18830] ease-in-out transition">
                   <span className="uppercase font-[500]">Media</span>
                 </Link>
               </li>
