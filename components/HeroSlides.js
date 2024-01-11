@@ -144,13 +144,16 @@ and aesthetic brilliance, ensuring a unique and captivating experience.
           <div className="home__shadow"></div>
         </div>
         <div className="h-full w-full relative">
+        <video autoPlay loop muted playsInline className="background-clip">
+            <source src="/automationvideo.mp4" className="w-full h-full absolute top-0 left-0" type="video/mp4"></source>
+        </video>
           {/* <Image
             alt=""
             className="slightly-zoomed-image object-cover"
             layout="fill"
             src="/landing2.jpg"
           /> */}
-          <div className="absolute z-10 text-white top-0 flex flex-col md:grid grid-cols-12 justify-center md:items-center w-full h-full left-[10%]">
+          <div className="absolute indexing text-white top-0 flex flex-col md:grid grid-cols-12 justify-center md:items-center w-full h-full left-[10%]">
             <motion.div
               variants={staggerContainer}
               initial="hidden"
@@ -202,7 +205,7 @@ and streamlined processes to enhance efficiency.
               </motion.p>
             </div> */}
           </div>
-          <div className="home__shadow"></div>
+          <div className="secondindexing home__shadow"></div>
         </div>
         <div className="h-full w-full relative">
           <Image

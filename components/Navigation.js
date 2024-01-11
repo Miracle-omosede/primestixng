@@ -48,8 +48,7 @@ const Navigation = () => {
             className={`flex items-center flex-col cursor-pointer relative`}
             onClick={() => handleItemClick(1)} // Provide an appropriate index
           >
-            <a className={`flex items-center flex-col cursor-pointer relative`} href="https://wa.me/2349061699611
-" >
+            <a className={`flex items-center flex-col cursor-pointer relative`} href="https://wa.me/2349061699611">
             <i className="ri-whatsapp-line"></i>
             <span> WhatsApp </span>
             </a>
@@ -74,8 +73,7 @@ const Navigation = () => {
             className={`flex items-center flex-col cursor-pointer relative`}
             onClick={() => handleItemClick(2)} // Provide an appropriate index
           >
-                   <a className={`flex items-center flex-col cursor-pointer relative`} href="tel:2349160629000
-" >
+                   <a className={`flex items-center flex-col cursor-pointer relative`} href="tel:2349160629000">
             <i className="ri-phone-line"></i>
             <span> Call </span>
             </a>
