@@ -829,7 +829,7 @@ const Page = () => {
                 </div>
             </div>
           </div>
-          
+
           <div className="md:col-span-4 col-span-12">
             {" "}
             <div className="w-[250px] h-[370px] perspective bg-transparent cursor-pointer group"  onClick={() => setShowfourthModal(true)}>
@@ -1283,6 +1283,128 @@ const Page = () => {
                       <button className=" py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col rounded-[0px] items-center justify-center bg-white text-[#A18830]">
                         <span>Angelfortune Ogbeta</span>
                         <span className="text-xs italic">content writer</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="md:col-span-4 col-span-12">
+            {" "}
+            <div className="w-[250px] h-[370px] perspective bg-transparent cursor-pointer group">
+              <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000 shadow-xl">
+                <div className="absolute border-2 w-full h-full">
+                  <Image
+                    alt=""
+                    src="/staffs/bibs.png"
+                    width={500}
+                    height={400}
+                    className="object-cover w-full h-full"
+                  />
+                  <div className="w-full flex items-center justify-center">
+                    <button className="absolute bottom-10 py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col w-auto rounded-[0px] items-center justify-center bg-white text-[#A18830]">
+                      <span>Bibobra Osubu</span>
+                      <span className="text-xs italic">Secretary to the CEO/ED</span>
+                    </button>
+                  </div>
+                </div>
+                <div className="absolute overflow-hidden  my-rotate-y-180 backface-hidden w-full h-full bg-gray-100">
+                  <div className="text-center flex flex-col items-center justify-center h-full">
+                    <Image
+                      alt=""
+                      src="/staffs/casual/bibs.png"
+                      width={500}
+                      height={400}
+                      className="object-cover w-full h-full"
+                    />
+                    <div className="absolute -bottom-10 delay-500 duration-1000 group-hover:bottom-10 scale-0 group-hover:scale-125 text-white">
+                      <button className=" py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col rounded-[0px] items-center justify-center bg-white text-[#A18830]">
+                      <span>Bibobra Osubu</span>
+                      <span className="text-xs italic">Secretary to the CEO/ED</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="md:col-span-4 col-span-12">
+            {" "}
+            <div className="w-[250px] h-[370px] perspective bg-transparent cursor-pointer group">
+              <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000 shadow-xl">
+                <div className="absolute border-2 w-full h-full">
+                  <Image
+                    alt=""
+                    src="/staffs/zara.png"
+                    width={500}
+                    height={400}
+                    className="object-cover w-full h-full"
+                  />
+                  <div className="w-full flex items-center justify-center">
+                    <button className="absolute bottom-10 py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col w-auto rounded-[0px] items-center justify-center bg-white text-[#A18830]">
+                    <span>Fatima Aliyu</span>
+                        <span className="text-xs italic">Sales Executive</span>
+                    </button>
+                  </div>
+                </div>
+                <div className="absolute overflow-hidden  my-rotate-y-180 backface-hidden w-full h-full bg-gray-100">
+                  <div className="text-center flex flex-col items-center justify-center h-full">
+                    <Image
+                      alt=""
+                      src="/staffs/casual/zara.png"
+                      width={500}
+                      height={400}
+                      className="object-cover w-full h-full"
+                    />
+                    <div className="absolute -bottom-10 delay-500 duration-1000 group-hover:bottom-10 scale-0 group-hover:scale-125 text-white">
+                      <button className=" py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col rounded-[0px] items-center justify-center bg-white text-[#A18830]">
+                        <span>Fatima Aliyu</span>
+                        <span className="text-xs italic">Sales Executive</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-12 gap-3">
+        <div className="md:col-span-4 col-span-12">
+            {" "}
+            <div className="w-[250px] h-[370px] perspective bg-transparent cursor-pointer group">
+              <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000 shadow-xl">
+                <div className="absolute border-2 w-full h-full">
+                  <Image
+                    alt=""
+                    src="/staffs/salamatu.png"
+                    width={500}
+                    height={400}
+                    className="object-cover w-full h-full"
+                  />
+                  <div className="w-full flex items-center justify-center">
+                    <button className="absolute bottom-10 py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col w-auto rounded-[0px] items-center justify-center bg-white text-[#A18830]">
+                    <span>Salamatu Solomon</span>
+                        <span className="text-xs italic">Senior Sales Executive</span>
+                    </button>
+                  </div>
+                </div>
+                <div className="absolute overflow-hidden  my-rotate-y-180 backface-hidden w-full h-full bg-gray-100">
+                  <div className="text-center flex flex-col items-center justify-center h-full">
+                    <Image
+                      alt=""
+                      src="/staffs/casual/salamatu.png"
+                      width={500}
+                      height={400}
+                      className="object-cover w-full h-full"
+                    />
+                    <div className="absolute -bottom-10 delay-500 duration-1000 group-hover:bottom-10 scale-0 group-hover:scale-125 text-white">
+                      <button className=" py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col rounded-[0px] items-center justify-center bg-white text-[#A18830]">
+                        <span>Salamatu Solomon</span>
+                        <span className="text-xs italic">Senior Sales Executive</span>
                       </button>
                     </div>
                   </div>

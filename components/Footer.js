@@ -128,7 +128,7 @@ const Footer = () => {
 
               <div className="col-span-12 md:col-span-4 flex flex-col gap-2">
                 <h1 className="heading">Projects</h1>
-                <Link href="/projects">
+                <Link href="/categoryselector">
                     All Projects
                   </Link>
                 <Link href="/projects">
