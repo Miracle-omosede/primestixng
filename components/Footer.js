@@ -78,6 +78,7 @@ const Footer = () => {
                       </span> */}
                     </h1>
                   </Link>
+{/* here */}
 
                   {/* <div className="flex gap-2 ml-5 mt-4 font-semibold">
                     <span>
@@ -143,7 +144,7 @@ const Footer = () => {
 
               
             </div>
-            <div className="grid grid-cols-12 my-10">
+            <div className="grid grid-cols-12 md:my-10 my-0">
               {/* <div className="col-span-12 md:col-span-4 flex flex-col gap-2">
                 <h1 className="heading">Communities</h1>
                 {communities?.map((community) => (
@@ -198,10 +199,17 @@ const Footer = () => {
               <i className="ri-linkedin-box-fill"></i>
               <i className="ri-youtube-fill"></i>
             </div>
+
+            <div className="flex gap-2">
+                  <i className="ri-map-pin-line"></i>
+                    <p>
+                    19 Philip Shaibu Crescent,<br/> Wuye, Abuja.
+                    </p>
+                  </div>
           </div>
         </motion.div>
 
-        <div className="">
+        <div className="md:mt-0 mt-5">
           <div className="flex flex-row md:px-0 px-5 pb-10 text-xs gap-5">
             <Link href="./">Sitemap Policy</Link>
             <Link href="./">Cookie</Link>
