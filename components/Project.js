@@ -28,7 +28,7 @@ const Project = ({ data }) => {
             {data?.name}
           </h3>
           <h4 className="text-[#4a4a4a] text-md h-[25px] font-bold">
-            <i className="ri-map-pin-line"></i>
+            {/* <i className="ri-map-pin-line"></i> */}
             {/* {data?.location} */}
           </h4>
 

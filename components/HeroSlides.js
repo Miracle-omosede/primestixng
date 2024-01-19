@@ -212,7 +212,7 @@ and streamlined processes to enhance efficiency.
             alt=""
             className="slightly-zoomed-image object-cover"
             layout="fill"
-            src="/landing4.jpg"
+            src="/disruptimage.jpg"
           />
           <div className="absolute z-10 text-white top-0 flex flex-col md:grid grid-cols-12 justify-center md:items-center w-full h-full left-[10%]">
             <motion.div

@@ -62,12 +62,12 @@ const FirstModal = ({ isVisible, onClose }) => {
                 diverse roles in global development, focusing on Nigeria.
                 Maxwell has actively participated in the development of
                 sustainable energy solutions for SME clusters in various
-                communities. He has comprehensive knowledge of current research
+                communities.<br/> He has comprehensive knowledge of current research
                 and trends in renewable energy and sustainable development. His
                 vast knowledge in the field has earned him recognition and
                 invites to numerous inter-governmental conferences on renewable
                 energy in Nigeria like “ Scaling up Renewable Energy Program
-                (SREP)” Countries Roundtable (4th - 8th Dec, 2017).
+                (SREP)” Countries Roundtable (4th - 8th Dec, 2017).<br/>
                 Maxwell&apos;s career journey has taken him through various
                 renewable energy companies in the UK and Nigeria. Alongside his
                 partners, he co-founded ICE Solar Commercial Power, where he
@@ -76,7 +76,7 @@ const FirstModal = ({ isVisible, onClose }) => {
                 in SME clusters, providing alternative power solutions to
                 businesses across the Niger Delta region. ICE has maintained a
                 growing solar portfolio, with an installed capacity exceeding
-                250KW in the region, with plans to reach 5MW by the end of 2023.
+                250KW in the region, with plans to reach 5MW by the end of 2023.<br/>
                 More recently, Maxwell served as the Managing Director/Chief
                 Executive Officer of Lucky Lumac Nig Ltd, an engineering and
                 construction company. During his tenure, he oversaw the
@@ -86,7 +86,7 @@ const FirstModal = ({ isVisible, onClose }) => {
                 constructing a state-of-the-art aircraft hangar, runway
                 construction, logistics support, and more. As CEO, he
                 successfully delivered multiple construction and engineering
-                projects across Nigeria. Presently, he is the Chief Executive
+                projects across Nigeria. <br/>Presently, he is the Chief Executive
                 officer of Primestix Construction Limited where he has the
                 singular goal of disrupting the real estate space by
                 intelligently and seamlessly integrating audacious architecture
@@ -96,10 +96,10 @@ const FirstModal = ({ isVisible, onClose }) => {
                 with the knowledge and expertise to revolutionize the
                 traditional real estate approach. Maxwell envisions a future
                 where homes are not just structures but intelligent, energy
-                efficient spaces that enhance the quality of life for residents.
+                efficient spaces that enhance the quality of life for residents.<br/>
                 He is also a member of the Nigeria Society of Engineers (NSE),
                 and the Renewable Energy Association of Nigeria (REAN) amongst
-                other professional bodies. He is happily married and is an avid
+                other professional bodies. <br/>He is happily married and is an avid
                 car racing enthusiast
               </p>
             </div>
@@ -167,21 +167,21 @@ Director and co-founder of Primestix Construction Ltd., He leads a dynamic team 
 innovations in the real estate sector. His background in risk management and project management puts him squarely
 in the saddle to lead the team of disruptors. Notably, Hanim is a director at CADG Nig. Ltd, where he partnered
 with the Presidential Committee on the North-East Initiative to execute construction projects in Borno and Niger
-State Nigeria.
+State Nigeria.<br/>
 He holds a major in Economics from St. Olaf College, Northfield, MN, and has demonstrated excellence in various
-capacities, including serving on the Student Senate and representing the Multicultural Student Organization.
+capacities, including serving on the Student Senate and representing the Multicultural Student Organization.<br/>
 He started his career in the Minneapolis, Minnesota, and Boston, Massachusetts, offices of International Netherland
-Group (ING), gaining extensive experience in risk management and project management.
+Group (ING), gaining extensive experience in risk management and project management.<br/>
 In previous roles with Leadway Assurance Company Ltd, He showcased his expertise in relationship management,
 growing insurance portfolios, and providing solutions to the insurance needs of individuals. His achievements include
 managing a classified book of business and leveraging relationships within government and the private sector to acquire
-new business.
+new business.<br/>
 Hanim&apos;s passion for excellence led him to co-found Primestix Construction Ltd. He and his partner have meticulously
 curated a team dedicated to excellence and committed to bringing cutting-edge technology and timeless designs to the
 real estate space. His adeptness in managing diverse teams and negotiating complex deals solidifies Primestix&apos;s position
-as a leader in the industry.
+as a leader in the industry.<br/>
 Currently pursuing exams with the Chartered Insurance Institute of Nigeria (CIIN), Hanim continues to strive for
-excellence in the insurance industry and in everything that he does.
+excellence in the insurance industry and in everything that he does.<br/>
 Outside of his professional endeavors, Hanim is happily married and when he&apos;s not spending time with his family,
 you&apos;ll find him cooking, reading nonfiction books, playing chess, and traveling the world.
               </p>
@@ -245,24 +245,24 @@ const ThirdModal = ({ isDisplaying, onClose }) => {
               Ngozi, a graduate of Psychology from the renowned Nnamdi Azikiwe University, is a Human Resources professional
 certified by the prestigious Human Resources Certification Institute in the USA. Armed with over half a decade of
 professional experience, she has honed her skills as a versatile generalist across a diverse array of industries, including
-Real Estate, Media and advertising, IT, and FMCG.
+Real Estate, Media and advertising, IT, and FMCG.<br/>
 Her professional prowess spans a wide spectrum, encompassing Talent Acquisition and Retention, Workforce Planning,
 Policy Creation and Implementation, Stakeholder Management, Advisory Services, Training and Development,
 Employee Engagement, Culture Design, Counseling, Employer Branding, and Benefits Administration.
 In a remarkable chapter of her career, Ngozi took the reins of the Human Resources and Compliance department in a
 multinational corporation with branches stretching across major cities in Nigeria, the UK, the USA, and the UAE. In
 this role, she managed a dynamic team of over 120 employees and orchestrated a significant financial ascent, driving
-revenue from N700 million to a remarkable N2 billion within a single year.
+revenue from N700 million to a remarkable N2 billion within a single year.<br/>
 Prior to her tenure at Primestix Construction, Ngozi held the pivotal role of People and operations Lead at Nigeria&apos;s
 pioneering mental health tech company. Leading a dynamic team of both technical and non-technical professionals to
-deliver accessible and affordable psychotherapeutic services to Africans worldwide.
+deliver accessible and affordable psychotherapeutic services to Africans worldwide.<br/>
 Ngozi holds a pivotal role at Primestix Construction as the Head of People Operations and administration. In this
 capacity, she spearheads a multitude of crucial functions that encompass the entire spectrum of the employee journey,
 from onboarding to offboarding. Her expert guidance ensures the seamless and efficient operation of the organization
-as this plays a key role in driving Primestix Construction toward its vision of excellence and growth.
+as this plays a key role in driving Primestix Construction toward its vision of excellence and growth.<br/>
 She is a strong advocate of the belief that people are an organization&apos;s most asset. Her work revolves around harnessing
 the innate potential within individuals to enhance productivity, all while ensuring job satisfaction. Her career
-aspiration? To become Nigeria&apos;s and, ultimately, Africa&apos;s foremost performance coach.
+aspiration? To become Nigeria&apos;s and, ultimately, Africa&apos;s foremost performance coach.<br/>
 When not engrossed in her professional pursuits, Ngozi&apos;s diverse interests come to the fore. You may find her
 immersed in the pages of a compelling book, tuning in to music, solving intricate puzzles, crafting culinary delights in
 her kitchen, or deep amid an extensive research quest on subjects that pique her curiosity.
@@ -328,20 +328,20 @@ const FourthModal = ({ isSeen, onClose }) => {
             As the Head of Legal and Regulatory Compliance at Primestix Construction Limited, Omolanke Temitayo Oni brings
 over a decade of legal expertise and strategic leadership to the forefront of our organization. Holding a Bachelor of Law
 degree from Olabisi Onabanjo University and a Barrister at Law (BL) qualification from the Nigerian Law School,
-Omolanke has established herself as a top-performing professional in the corporate and commercial legal landscape.
+Omolanke has established herself as a top-performing professional in the corporate and commercial legal landscape.<br/>
 She leads with distinction, ensuring strict adherence to regulatory requirements and corporate governance principles.
 Specializing in real estate transactions, she excels in drafting legal documents and negotiating contractual Agreements,
 conducting due diligence, and facilitating Joint Venture Agreements (JVA). Her expertise in risk management, contract
-administration, and corporate governance significantly contributes to our success at Primestix.
+administration, and corporate governance significantly contributes to our success at Primestix.<br/>
 Omolanke&apos;s professional journey is characterized by her seamless integration of legal acumen with a deep understanding
-of regulatory compliance and her impact is evident in her achievements.
+of regulatory compliance and her impact is evident in her achievements.<br/>
 Prior to joining Primestix, she served in key roles at leading companies, where she successfully led internal
 restructuring initiatives, managed legal teams for mergers and acquisitions, saved the company penalty costs, and
-significantly reduced internal and external fraud incidents, showcasing her commitment to risk management.
+significantly reduced internal and external fraud incidents, showcasing her commitment to risk management.<br/>
 She is a dedicated student member of the Institute of Chartered Secretaries and Administrators (ICSAN) and The
 Compliance Institute of Nigeria (CIN). Her keen interest in human capital development reflects her commitment to
 advancing individuals and organizations. She is passionate about harnessing the potential of effective development and
-skills enhancement in employees, fostering talent, and contributing to growth in today&apos;s dynamic world.
+skills enhancement in employees, fostering talent, and contributing to growth in today&apos;s dynamic world.<br/>
 When she&apos;s not engaged in her legal duties, she is often the heart and soul of lively celebrations (owanbe), where she
 effortlessly adds a disruptive element of excitement to every event she attends.
             </p>
@@ -403,14 +403,14 @@ const FifthModal = ({ isSaw, onClose }) => {
             Lilian is a graduate of Accountancy from the prestigious university of Abia State, Uturu, Abia State. Driven by a passion for
 precision and a commitment to financial excellence, Odey Lilian Chinwe is a highly motivated and results-driven Finance/Account
 Officer with a proven track record. Combining trustworthiness, reliability, meticulousness, and numeracy, Lilian possesses a
-profound understanding of the intricacies of financial management
+profound understanding of the intricacies of financial management.<br/>
 Prior to joining Primestix, Lilian&apos;s teaching of ACCA Advanced Audit and Assurance resulted in a 100% pass rate over five
 sessions and her role as a team lead on various accounting projects consistently delivered accurate results within tight deadlines. She
-was also recognized as a trusted and skilled point of contact for internal cash management inquiries.
+was also recognized as a trusted and skilled point of contact for internal cash management inquiries.<br/>
 She is also a member of the Association of Chartered Certified Accountants (ACCA), Associate Member, Nigerian Institute of
 Management (ANIM)  and various training programs including Professional Skill Module (ACCA), Resource Mobilization,
-PMTCT, and Data Management.
-When she’s not busy acting as the central Bank of Primestixng, Lilian enjoys sharing ideas, reading, and traveling.
+PMTCT, and Data Management.<br/>
+When she’s not busy acting as the central Bank of Primestixng, Lilian enjoys sharing ideas, reading, and traveling.<br/>
 Her comprehensive expertise, coupled with her unwavering commitment to financial excellence, makes her an invaluable asset at
 Primestix. Her contributions are instrumental in maintaining the financial integrity of Primestix, ensuring transparency, and
 supporting strategic decision-making through accurate financial insights.
@@ -466,7 +466,7 @@ const SixthModal = ({ isThis, onClose }) => {
               <div className="flex flex-col">
               <span className="font-bold">Grace Ichaba</span>
                         <span className="text-xs italic">
-                          Head Engineering Construction
+                          Head Engineering/Construction
                         </span>
               </div>
             </div>
@@ -475,10 +475,10 @@ const SixthModal = ({ isThis, onClose }) => {
             Grace Ichaba is a chartered and registered Quantity Surveyor with an illustrious career spanning over twelve years. As the Head of
 Engineering at Primestix Construction Limited, she brings a wealth of experience and dynamism to Primestix. Her responsibilities
 encompass various facets of quantity surveying and project management, estimating, cost planning, evaluation, monitoring, and
-control is a cornerstone of Primestix&apos;s commitment to delivering innovative and high-quality real estate projects.
+control is a cornerstone of Primestix&apos;s commitment to delivering innovative and high-quality real estate projects.<br/>
 Prior to her role at Primestix, Grace has successfully overseen and executed a multitude of construction projects, including academic
 complexes, multipurpose halls, and departmental buildings in various educational institutions, civil engineering projects, including
-road networks within estates, showcasing her versatility in handling diverse aspects of real estate development.
+road networks within estates, showcasing her versatility in handling diverse aspects of real estate development.<br/>
 Grace is a professional member of the Nigerian Institute of Quantity Surveyors (MNIQS) and fully registered with the Quantity
 Surveyors Registration Board of Nigeria (QSRBN), underlining her commitment to the highest standards of professional practice.
             </p>
@@ -761,7 +761,7 @@ const Page = () => {
                       <button className="absolute bottom-10 py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col w-auto rounded-[0px] items-center justify-center bg-white text-[#A18830]">
                         <span>Grace Ichaba</span>
                         <span className="text-xs italic">
-                          Head Engineering Construction
+                          Head Engineering/Construction
                         </span>
                       </button>
                     </div>
@@ -911,109 +911,29 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="font-raleway">
-          <h1 className="font-bold md:text-4xl text-2xl">The Consultants</h1>
-        </div>
 
-        <div className="grid grid-cols-12 gap-3">
-          <div className="md:col-span-4 col-span-12">
-            {" "}
-            <div className="w-[250px] h-[370px] perspective bg-transparent cursor-pointer group" onClick={() => setShowseventhModal(true)}>
-              <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000 shadow-xl">
-                <div className="absolute border-2 w-full h-full">
-                  <Image
-                    alt=""
-                    src="/consultant2.jpg"
-                    width={500}
-                    height={400}
-                    className="object-cover w-full h-full"
-                  />
-                  <div className="w-full flex items-center justify-center">
-                    <button className="absolute bottom-10 py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col w-auto rounded-[0px] items-center justify-center bg-white text-[#A18830]">
-                    <span>Fredericks Emmanuel Paul</span>
-                    </button>
-                  </div>
-                </div>
-                <div className="absolute overflow-hidden  my-rotate-y-180 backface-hidden w-full h-full bg-gray-100">
-                  <div className="text-center flex flex-col items-center justify-center h-full">
-                    <Image
-                      alt=""
-                      src="/consultant2.jpg"
-                      width={500}
-                      height={400}
-                      className="object-cover w-full h-full"
-                    />
-                    <div className="absolute -bottom-10 delay-500 duration-1000 group-hover:bottom-10 scale-0 group-hover:scale-125 text-white">
-                      <button className=" py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col rounded-[0px] items-center justify-center bg-white text-[#A18830]">
-                        <span>View Bio</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="md:col-span-4 col-span-0"></div>
-          <div className="md:col-span-4 col-span-12">
-            {" "}
-            <div className="w-[250px] h-[370px] perspective bg-transparent cursor-pointer group"  onClick={() => setShoweightModal(true)}>
-              <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000 shadow-xl">
-                <div className="absolute border-2 w-full h-full">
-                  <Image
-                    alt=""
-                    src="/consultant1.jpg"
-                    width={500}
-                    height={400}
-                    className="object-cover w-full h-full"
-                  />
-                  <div className="w-full flex items-center justify-center">
-                    <button className="absolute bottom-10 py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col w-auto rounded-[0px] items-center justify-center bg-white text-[#A18830]">
-                      <span>Chuka Odigbo</span>
-                    </button>
-                  </div>
-                </div>
-                <div className="absolute overflow-hidden  my-rotate-y-180 backface-hidden w-full h-full bg-gray-100">
-                  <div className="text-center flex flex-col items-center justify-center h-full">
-                    <Image
-                      alt=""
-                      src="/consultant1.jpg"
-                      width={500}
-                      height={400}
-                      className="object-cover w-full h-full"
-                    />
-                    <div className="absolute -bottom-10 delay-500 duration-1000 group-hover:bottom-10 scale-0 group-hover:scale-125 text-white">
-                      <button className=" py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col rounded-[0px] items-center justify-center bg-white text-[#A18830]">
-                        <span>View Bio</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        
 
         <div className="font-raleway">
           <h1 className="font-bold md:text-4xl text-2xl">The Disruptors</h1>
         </div>
 
         <div className="grid grid-cols-12 gap-3">
-          <div className="md:col-span-4 col-span-12">
+        <div className="md:col-span-4 col-span-12">
             {" "}
             <div className="w-[250px] h-[370px] perspective bg-transparent cursor-pointer group">
               <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000 shadow-xl">
                 <div className="absolute border-2 w-full h-full">
                   <Image
                     alt=""
-                    src="/staffs/IMG--5.jpg"
+                    src="/staffs/zara.jpg"
                     width={500}
                     height={400}
                     className="object-cover w-full h-full"
                   />
                   <div className="w-full flex items-center justify-center">
                     <button className="absolute bottom-10 py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col w-auto rounded-[0px] items-center justify-center bg-white text-[#A18830]">
-                    <span>Gideon Olaleye</span>
+                    <span>Fatima Aliyu</span>
+                        <span className="text-xs italic">Sales Executive</span>
                     </button>
                   </div>
                 </div>
@@ -1021,17 +941,15 @@ const Page = () => {
                   <div className="text-center flex flex-col items-center justify-center h-full">
                     <Image
                       alt=""
-                      src="/staffs/casual/img-10.jpg"
+                      src="/staffs/casual/zara.png"
                       width={500}
                       height={400}
                       className="object-cover w-full h-full"
                     />
                     <div className="absolute -bottom-10 delay-500 duration-1000 group-hover:bottom-10 scale-0 group-hover:scale-125 text-white">
                       <button className=" py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col rounded-[0px] items-center justify-center bg-white text-[#A18830]">
-                        <span>Gideon Olaleye</span>
-                        {/* <span className="text-xs italic">
-                          Chief Executive Officer
-                        </span> */}
+                        <span>Fatima Aliyu</span>
+                        <span className="text-xs italic">Sales Executive</span>
                       </button>
                     </div>
                   </div>
@@ -1054,6 +972,9 @@ const Page = () => {
                   <div className="w-full flex items-center justify-center">
                     <button className="absolute bottom-10 py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col w-auto rounded-[0px] items-center justify-center bg-white text-[#A18830]">
                       <span>Raphael Edet Okon</span>
+                      <span className="text-xs italic">
+                          Health and Safety Officer 
+                        </span>
                     </button>
                   </div>
                 </div>
@@ -1069,9 +990,9 @@ const Page = () => {
                     <div className="absolute -bottom-10 delay-500 duration-1000 group-hover:bottom-10 scale-0 group-hover:scale-125 text-white">
                       <button className=" py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col rounded-[0px] items-center justify-center bg-white text-[#A18830]">
                         <span>Raphael Edet Okon</span>
-                        {/* <span className="text-xs italic">
-                          Chief Executive Officer
-                        </span> */}
+                        <span className="text-xs italic">
+                          Health and Safety Officer 
+                        </span>
                       </button>
                     </div>
                   </div>
@@ -1123,6 +1044,47 @@ const Page = () => {
           </div>
         </div>
         <div className="grid grid-cols-12 gap-3">
+        
+          <div className="md:col-span-4 col-span-12">
+            {" "}
+            <div className="w-[250px] h-[370px] perspective bg-transparent cursor-pointer group">
+              <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000 shadow-xl">
+                <div className="absolute border-2 w-full h-full">
+                  <Image
+                    alt=""
+                    src="/staffs/IMG--10.jpg"
+                    width={500}
+                    height={400}
+                    className="object-cover w-full h-full"
+                  />
+                  <div className="w-full flex items-center justify-center">
+                    <button className="absolute bottom-10 py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col w-auto rounded-[0px] items-center justify-center bg-white text-[#A18830]">
+                      <span>Theresa Queen Maza</span>
+                      <span className="text-xs italic">Office Assistant</span>
+                    </button>
+                  </div>
+                </div>
+                <div className="absolute overflow-hidden  my-rotate-y-180 backface-hidden w-full h-full bg-gray-100">
+                  <div className="text-center flex flex-col items-center justify-center h-full">
+                    <Image
+                      alt=""
+                      src="/staffs/casual/img-12.jpg"
+                      width={500}
+                      height={400}
+                      className="object-cover w-full h-full"
+                    />
+                    <div className="absolute -bottom-10 delay-500 duration-1000 group-hover:bottom-10 scale-0 group-hover:scale-125 text-white">
+                      <button className=" py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col rounded-[0px] items-center justify-center bg-white text-[#A18830]">
+                        <span>Theresa Queen Maza</span>
+                        <span className="text-xs italic">Office Assistant</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div className="md:col-span-4 col-span-12">
             {" "}
             <div className="w-[250px] h-[370px] perspective bg-transparent cursor-pointer group">
@@ -1159,46 +1121,6 @@ const Page = () => {
                         <span className="text-xs italic">
                           Brand & Comms Manager
                         </span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="md:col-span-4 col-span-12">
-            {" "}
-            <div className="w-[250px] h-[370px] perspective bg-transparent cursor-pointer group">
-              <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000 shadow-xl">
-                <div className="absolute border-2 w-full h-full">
-                  <Image
-                    alt=""
-                    src="/staffs/IMG--10.jpg"
-                    width={500}
-                    height={400}
-                    className="object-cover w-full h-full"
-                  />
-                  <div className="w-full flex items-center justify-center">
-                    <button className="absolute bottom-10 py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col w-auto rounded-[0px] items-center justify-center bg-white text-[#A18830]">
-                      <span>Theresa Queen Maza</span>
-                      <span className="text-xs italic">Office Assistant</span>
-                    </button>
-                  </div>
-                </div>
-                <div className="absolute overflow-hidden  my-rotate-y-180 backface-hidden w-full h-full bg-gray-100">
-                  <div className="text-center flex flex-col items-center justify-center h-full">
-                    <Image
-                      alt=""
-                      src="/staffs/casual/img-12.jpg"
-                      width={500}
-                      height={400}
-                      className="object-cover w-full h-full"
-                    />
-                    <div className="absolute -bottom-10 delay-500 duration-1000 group-hover:bottom-10 scale-0 group-hover:scale-125 text-white">
-                      <button className=" py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col rounded-[0px] items-center justify-center bg-white text-[#A18830]">
-                        <span>Theresa Queen Maza</span>
-                        <span className="text-xs italic">Office Assistant</span>
                       </button>
                     </div>
                   </div>
@@ -1290,6 +1212,52 @@ const Page = () => {
               </div>
             </div>
           </div>
+          
+          <div className="md:col-span-4 col-span-12">
+            {" "}
+            <div className="w-[250px] h-[370px] perspective bg-transparent cursor-pointer group">
+              <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000 shadow-xl">
+                <div className="absolute border-2 w-full h-full">
+                  <Image
+                    alt=""
+                    src="/staffs/IMG--5.jpg"
+                    width={500}
+                    height={400}
+                    className="object-cover w-full h-full"
+                  />
+                  <div className="w-full flex items-center justify-center">
+                    <button className="absolute bottom-10 py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col w-auto rounded-[0px] items-center justify-center bg-white text-[#A18830]">
+                    <span>Gideon Olaleye</span>
+                    <span className="text-xs italic">
+                    Architect 
+
+                        </span>
+                    </button>
+                  </div>
+                </div>
+                <div className="absolute overflow-hidden  my-rotate-y-180 backface-hidden w-full h-full bg-gray-100">
+                  <div className="text-center flex flex-col items-center justify-center h-full">
+                    <Image
+                      alt=""
+                      src="/staffs/casual/img-10.jpg"
+                      width={500}
+                      height={400}
+                      className="object-cover w-full h-full"
+                    />
+                    <div className="absolute -bottom-10 delay-500 duration-1000 group-hover:bottom-10 scale-0 group-hover:scale-125 text-white">
+                      <button className=" py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col rounded-[0px] items-center justify-center bg-white text-[#A18830]">
+                        <span>Gideon Olaleye</span>
+                        <span className="text-xs italic">
+                        Architect 
+
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <div className="md:col-span-4 col-span-12">
             {" "}
@@ -1331,45 +1299,6 @@ const Page = () => {
             </div>
           </div>
 
-          <div className="md:col-span-4 col-span-12">
-            {" "}
-            <div className="w-[250px] h-[370px] perspective bg-transparent cursor-pointer group">
-              <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000 shadow-xl">
-                <div className="absolute border-2 w-full h-full">
-                  <Image
-                    alt=""
-                    src="/staffs/zara.png"
-                    width={500}
-                    height={400}
-                    className="object-cover w-full h-full"
-                  />
-                  <div className="w-full flex items-center justify-center">
-                    <button className="absolute bottom-10 py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col w-auto rounded-[0px] items-center justify-center bg-white text-[#A18830]">
-                    <span>Fatima Aliyu</span>
-                        <span className="text-xs italic">Sales Executive</span>
-                    </button>
-                  </div>
-                </div>
-                <div className="absolute overflow-hidden  my-rotate-y-180 backface-hidden w-full h-full bg-gray-100">
-                  <div className="text-center flex flex-col items-center justify-center h-full">
-                    <Image
-                      alt=""
-                      src="/staffs/casual/zara.png"
-                      width={500}
-                      height={400}
-                      className="object-cover w-full h-full"
-                    />
-                    <div className="absolute -bottom-10 delay-500 duration-1000 group-hover:bottom-10 scale-0 group-hover:scale-125 text-white">
-                      <button className=" py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col rounded-[0px] items-center justify-center bg-white text-[#A18830]">
-                        <span>Fatima Aliyu</span>
-                        <span className="text-xs italic">Sales Executive</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
 
         <div className="grid grid-cols-12 gap-3">
@@ -1380,7 +1309,7 @@ const Page = () => {
                 <div className="absolute border-2 w-full h-full">
                   <Image
                     alt=""
-                    src="/staffs/salamatu.png"
+                    src="/staffs/salamatu.jpg"
                     width={500}
                     height={400}
                     className="object-cover w-full h-full"
@@ -1413,6 +1342,89 @@ const Page = () => {
             </div>
           </div>
         </div>
+
+        <div className="font-raleway">
+          <h1 className="font-bold md:text-4xl text-2xl">The Consultants</h1>
+        </div>
+
+        <div className="grid grid-cols-12 gap-3">
+          <div className="md:col-span-4 col-span-12">
+            {" "}
+            <div className="w-[250px] h-[370px] perspective bg-transparent cursor-pointer group" onClick={() => setShowseventhModal(true)}>
+              <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000 shadow-xl">
+                <div className="absolute border-2 w-full h-full">
+                  <Image
+                    alt=""
+                    src="/consultant2.jpg"
+                    width={500}
+                    height={400}
+                    className="object-cover w-full h-full"
+                  />
+                  <div className="w-full flex items-center justify-center">
+                    <button className="absolute bottom-10 py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col w-auto rounded-[0px] items-center justify-center bg-white text-[#A18830]">
+                    <span>Fredericks Emmanuel Paul</span>
+                    </button>
+                  </div>
+                </div>
+                <div className="absolute overflow-hidden  my-rotate-y-180 backface-hidden w-full h-full bg-gray-100">
+                  <div className="text-center flex flex-col items-center justify-center h-full">
+                    <Image
+                      alt=""
+                      src="/consultant2.jpg"
+                      width={500}
+                      height={400}
+                      className="object-cover w-full h-full"
+                    />
+                    <div className="absolute -bottom-10 delay-500 duration-1000 group-hover:bottom-10 scale-0 group-hover:scale-125 text-white">
+                      <button className=" py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col rounded-[0px] items-center justify-center bg-white text-[#A18830]">
+                        <span>View Bio</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="md:col-span-4 col-span-0"></div>
+          <div className="md:col-span-4 col-span-12">
+            {" "}
+            <div className="w-[250px] h-[370px] perspective bg-transparent cursor-pointer group"  onClick={() => setShoweightModal(true)}>
+              <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000 shadow-xl">
+                <div className="absolute border-2 w-full h-full">
+                  <Image
+                    alt=""
+                    src="/consultant1.jpg"
+                    width={500}
+                    height={400}
+                    className="object-cover w-full h-full"
+                  />
+                  <div className="w-full flex items-center justify-center">
+                    <button className="absolute bottom-10 py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col w-auto rounded-[0px] items-center justify-center bg-white text-[#A18830]">
+                      <span>Chuka Odigbo</span>
+                    </button>
+                  </div>
+                </div>
+                <div className="absolute overflow-hidden  my-rotate-y-180 backface-hidden w-full h-full bg-gray-100">
+                  <div className="text-center flex flex-col items-center justify-center h-full">
+                    <Image
+                      alt=""
+                      src="/consultant1.jpg"
+                      width={500}
+                      height={400}
+                      className="object-cover w-full h-full"
+                    />
+                    <div className="absolute -bottom-10 delay-500 duration-1000 group-hover:bottom-10 scale-0 group-hover:scale-125 text-white">
+                      <button className=" py-2 shadow-xl capitalize font-semibold px-4 flex  flex-col rounded-[0px] items-center justify-center bg-white text-[#A18830]">
+                        <span>View Bio</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
       </div>
       <FirstModal isVisible={showModal} onClose={() => setShowModal(false)} />
       <SecondModal isShowing={showsecondModal} 

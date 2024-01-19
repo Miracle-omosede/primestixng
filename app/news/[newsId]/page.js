@@ -55,7 +55,7 @@ const NewsPageDetail = () => {
             <h1 className="capitalize font-[800] text-center text-5xl text-slate-900 px-5 md:px-0">
               {news?.title}
             </h1>
-            <span className="text-slate-800 font-semibold text-center w-full">5 MINIS READ</span>
+            <span className="text-slate-800 font-semibold text-center w-full">5 MINS READ</span>
           </div>
 
           {/* Banner Image */}
