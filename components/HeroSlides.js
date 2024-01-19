@@ -233,7 +233,7 @@ and streamlined processes to enhance efficiency.
                 className="md:text-2xl  md:w-full w-[70%] "
               >
                 We challenge norms and push boundaries to
-create groundbreaking solutions, setting new benchmarks and Unleashing a
+create groundbreaking solutions, setting new benchmarks and unleashing a
 new era in real estate construction.
               </motion.p>
               <Button className="z-10" />
