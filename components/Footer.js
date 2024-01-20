@@ -200,7 +200,7 @@ const Footer = () => {
               <i className="ri-youtube-fill"></i>
             </div>
 
-            <div className="flex gap-2">
+            <div className="flex gap-2 font-bold">
                   <i className="ri-map-pin-line"></i>
                     <p>
                     19 Philip Shaibu Crescent,<br/> Wuye, Abuja.
