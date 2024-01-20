@@ -25,6 +25,8 @@ const AllNews = () => {
       }
     };
 
+    
+
     fetchNews();
   }, []);
 
