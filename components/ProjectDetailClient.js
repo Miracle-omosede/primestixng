@@ -48,6 +48,7 @@ const ExpendableColumn = ({ question, isOpen, toggle }) => {
             transition: "all 0.25s",
           }}
         >
+          
           expand_more
         </span>
       </button>
