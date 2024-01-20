@@ -212,7 +212,7 @@ and streamlined processes to enhance efficiency.
             alt=""
             className="slightly-zoomed-image object-cover"
             layout="fill"
-            src="/landing4.jpg"
+            src="/disruptimage.jpg"
           />
           <div className="absolute z-10 text-white top-0 flex flex-col md:grid grid-cols-12 justify-center md:items-center w-full h-full left-[10%]">
             <motion.div
@@ -233,7 +233,7 @@ and streamlined processes to enhance efficiency.
                 className="md:text-2xl  md:w-full w-[70%] "
               >
                 We challenge norms and push boundaries to
-create groundbreaking solutions, setting new benchmarks and Unleashing a
+create groundbreaking solutions, setting new benchmarks and unleashing a
 new era in real estate construction.
               </motion.p>
               <Button className="z-10" />

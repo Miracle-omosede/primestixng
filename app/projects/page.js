@@ -6,7 +6,7 @@ const ProjectPage = () => {
     <main className="min-h-screen mt-20">
       <div className="caption-section text-white font-raleway">
         <div className="max-w-[768px] lg:max-w-[1170px] mx-auto px-[15px] ">
-          <h1 className="text-[53px] font-bold tracking-[2.06px] pt-[20px]">
+          <h1 className="text-[53px] font-bold tracking-[2.06px] pt-[20px] uppercase">
           The Maison terranova
           </h1>
           {/* <p className="capitalize text-lg text-gray-400 md:text-xl">

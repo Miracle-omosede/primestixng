@@ -7,7 +7,7 @@ const category = () => {
     <div className="min-h-screen mt-20 mb-20">
      <div className="caption-section text-white font-raleway">
         <div className="max-w-[768px] lg:max-w-[1170px] mx-auto px-[15px] ">
-          <h1 className="text-[53px] font-bold tracking-[2.06px] pt-[20px]">
+          <h1 className="text-[53px] font-bold tracking-[2.06px] pt-[20px] uppercase">
           Projects
           </h1>
           <p className="capitalize text-lg text-gray-400 md:text-xl">
@@ -21,7 +21,7 @@ const category = () => {
       <div className="shadow-2xl font-raleway">
         <div
           style={{
-            backgroundImage: `url(/suspendedpool.jpg)`,
+            backgroundImage: `url(/landing1.jpg)`,
             backgroundPosition: "50% center",
           }}
           className="h-[305px] bg-no-repeat bg-cover w-full"
