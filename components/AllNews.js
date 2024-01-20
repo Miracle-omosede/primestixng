@@ -67,7 +67,7 @@ const AllNews = () => {
                 </div>
                 <div className="p-4">
                   {/* date posted */}
-                  <FormattedDate createdAt={n?._createdAt} />
+                  <FormattedDate launchAt={n?.launchAt} />
 
                   <div>
                     {/* title */}
@@ -91,8 +91,8 @@ const AllNews = () => {
   );
 };
 
-const FormattedDate = ({ createdAt }) => {
-  const date = new Date(createdAt);
+const FormattedDate = ({ launchAt }) => {
+  const date = new Date(launchAt);
   const dateString = date.toString();
   const dateArray = dateString.split(" ");
   const day = dateArray[2];

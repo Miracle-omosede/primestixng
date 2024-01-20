@@ -22,7 +22,7 @@ import ProjectDisplay from "./ProjectDisplay";
 
 export const Accordion = ({ section, key }) => {
   const { isOpen, toggle } = useOpenController(false);
-  
+  // console.log(section);
   return (
     <div className="accordion-container font-raleway">
       <ExpendableColumn
@@ -122,6 +122,8 @@ const ProjectDetailClient = () => {
     fetchDetailProject();
   }, [projectId]);
 
+  // console.log(project);
+
   return (
     <main className="h-full mt-20 font-raleway">
       {isLoading ? (
@@ -129,7 +131,93 @@ const ProjectDetailClient = () => {
           <BeatLoader color="#e8d5a1b8" />
         </div>
       ) : (
-          <ProjectDisplay projectData={project} />
+        
+        <div className="w-full">
+          <div className="max-w-[1100px] mx-auto w-full md:px-0 px-10">
+            {/* ---banner image ---- */}
+            <div
+              className="h-[500px] w-full"
+              style={{
+                backgroundImage: `url(${project?.bannerImage?.asset?.url})`,
+                backgroundPosition: "center center",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+              }}
+            />
+
+            <h1 className="text-5xl font-bold py-5">{project.name}</h1>
+            <p className="text-xl font-[500]">{project.description}</p>
+
+            <a
+              href="#form"
+              className="bg-[#A18830] text-white py-3 px-10 my-5 uppercase font-semibold inline-block"
+            >
+              Request a callback
+            </a>
+          </div>
+
+          <div className="bg-black font-raleway">
+            <div className="max-w-[1100px] mx-auto w-full py-10 md:px-0 px-10">
+              {" "}
+              <h1 className="text-5xl font-bold py-5 text-white ">Gallery</h1>
+              <div className="max-w-[1100px] mx-auto w-full overflow-hidden">
+                {project.gallery && <Carousel gallery={project.gallery} />}
+              </div>
+            </div>
+          </div>
+
+          {project?.landmark && (
+            <div className="max-w-[1100px] mx-auto w-full py-10  px-10 md:px-0">
+              <h1 className="text-5xl font-bold py-5 text-black">Nearby.</h1>
+              <ul className="md:ml-10 ml-3 flex flex-col gap-3">
+                {project?.landmarks?.map((landmark) => (
+                  <li key={landmark._id}>
+                    <h1 className="text-3xl font-semibold text-[#A18830]">
+                      {landmark.title}
+                    </h1>
+                    <span>{landmark.description}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {project?.community && (
+            <div className="max-w-[1100px] mx-auto w-full py-10 md:px-0 px-10">
+              <>
+                <h1 className="text-5xl font-bold py-5 text-black">
+                  The Community.
+                </h1>
+                <p className="my-10 text-xl ">
+                  {project?.community?.description}
+                </p>
+              </>
+            </div>
+          )}
+
+          <div className="max-w-[1100px] mx-auto w-full py-10  px-10 md:px-0">
+            {project?.amenities && (
+              <>
+                <h1 className="text-5xl font-bold py-5 text-black">
+                  Amenities and Advantages.
+                </h1>
+                <p className="font-[500] text-xl">
+                  Where leisure and fun come together
+                </p>
+
+                <div>
+                  <Amenities data={project?.amenities} />
+                </div>
+
+                {/* <Maps/> */}
+              </>
+            )}
+            {/* accordion */}
+            {project?.faqs && <MainAccordion data={project?.faqs} />}
+          </div>
+
+          <MessageForm />
+        </div>
       )}
     </main>
   );
@@ -198,7 +286,7 @@ const MessageForm = () => {
             <div className="flex flex-col justify-center items-center md:px-10">
               <div>
                 <span className="rounded-full bg-gray-200 px-5 py-4 text-2xl my-4">
-                <i className="ri-customer-service-2-fill text-[#A18830]"></i>
+                  <i className="ri-customer-service-2-fill text-[#A18830]"></i>
                 </span>
                 <h2 className="text-4xl lg:text-5xl mt-4 font-bold leading-tight">
                   Lets talk about everything!
