@@ -18,10 +18,11 @@ import toast from "react-hot-toast";
 
 import useOpenController from "./useOpenController";
 import Image from "next/image";
+import ProjectDisplay from "./ProjectDisplay";
 
 export const Accordion = ({ section, key }) => {
   const { isOpen, toggle } = useOpenController(false);
-  // console.log(section);
+  
   return (
     <div className="accordion-container font-raleway">
       <ExpendableColumn
@@ -47,6 +48,7 @@ const ExpendableColumn = ({ question, isOpen, toggle }) => {
             transition: "all 0.25s",
           }}
         >
+          
           expand_more
         </span>
       </button>
@@ -67,7 +69,7 @@ const flickityOptions = {
 };
 
 function Carousel({ gallery }) {
-  console.log(gallery);
+  // console.log(gallery);
   return (
     <>
       {gallery?.length > 0 && (
@@ -121,8 +123,6 @@ const ProjectDetailClient = () => {
     fetchDetailProject();
   }, [projectId]);
 
-  console.log(project);
-
   return (
     <main className="h-full mt-20 font-raleway">
       {isLoading ? (
@@ -130,94 +130,7 @@ const ProjectDetailClient = () => {
           <BeatLoader color="#e8d5a1b8" />
         </div>
       ) : (
-        <div className="w-full">
-          <div className="max-w-[1100px] mx-auto w-full md:px-0 px-10">
-            {/* ---banner image ---- */}
-            <div
-              className="h-[500px] w-full"
-              style={{
-                backgroundImage: `url(${project?.bannerImage?.asset?.url})`,
-                backgroundPosition: "center center", backgroundRepeat: "no-repeat", backgroundSize: "cover"
-              }}
-            />
-
-            {/* ---banner title--- */}
-            <h1 className="text-5xl font-bold py-5">{project.name}</h1>
-            <p className="text-xl font-[500]">{project.description}</p>
-
-            {/* this button takes them to the form */}
-            <a
-              href="#form"
-              className="bg-[#A18830] text-white py-3 px-10 my-5 uppercase font-semibold inline-block"
-            >
-              Request a callback
-            </a>
-
-            {/* full long description */}
-          </div>
-
-          <div className="bg-black font-raleway">
-            <div className="max-w-[1100px] mx-auto w-full py-10 md:px-0 px-10">
-              {" "}
-              <h1 className="text-5xl font-bold py-5 text-white ">Gallery</h1>
-              <div className="max-w-[1100px] mx-auto w-full overflow-hidden">
-                {project.gallery && <Carousel gallery={project.gallery} />}
-              </div>
-            </div>
-          </div>
-
-          {project?.landmark && (
-            <div className="max-w-[1100px] mx-auto w-full py-10  px-10 md:px-0">
-              <h1 className="text-5xl font-bold py-5 text-black">Nearby.</h1>
-              <ul className="md:ml-10 ml-3 flex flex-col gap-3">
-                {project?.landmarks?.map((landmark) => (
-                  <li key={landmark._id}>
-                    <h1 className="text-3xl font-semibold text-[#A18830]">
-                      {landmark.title}
-                    </h1>
-                    <span>{landmark.description}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
-
-          {project?.community && (
-            <div className="max-w-[1100px] mx-auto w-full py-10 md:px-0 px-10">
-              <>
-                <h1 className="text-5xl font-bold py-5 text-black">
-                  The Community.
-                </h1>
-                <p className="my-10 text-xl ">
-                  {project?.community?.description}
-                </p>
-              </>
-            </div>
-          )}
-
-          <div className="max-w-[1100px] mx-auto w-full py-10  px-10 md:px-0">
-            {project?.amenities && (
-              <>
-                <h1 className="text-5xl font-bold py-5 text-black">
-                  Amenities and Advantages.
-                </h1>
-                <p className="font-[500] text-xl">
-                  Where leisure and fun come together
-                </p>
-
-                <div>
-                  <Amenities data={project?.amenities} />
-                </div>
-
-                {/* <Maps/> */}
-              </>
-            )}
-            {/* accordion */}
-            {project?.faqs && <MainAccordion data={project?.faqs} />}
-          </div>
-
-          <MessageForm />
-        </div>
+          <ProjectDisplay projectData={project} />
       )}
     </main>
   );
@@ -254,7 +167,7 @@ const MessageForm = () => {
       const response = await axios.post(`/api/customer`, values);
 
       const data = response.data;
-      console.log(data);
+      // console.log(data);
       if (data.status === 200) {
         toast.success(data.message);
       } else {

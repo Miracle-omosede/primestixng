@@ -35,6 +35,8 @@ const News = () => {
     fetchNews();
   }, []);
 
+  console.log("NewsDatahere: ", news);
+
   return (
     <div className="relative md:px-0 px-5 font-raleway">
       {news && (
@@ -98,14 +100,15 @@ const News = () => {
                 <div className="news-slider__item swiper-slide">
                   <div className="news__item">
                     {/* Here */}
-                    <FormattedDate createdAt={n?._createdAt} />
+                    <FormattedDate dateOfLaunch={n?.launchAt} />
                     <div>
-                    <a className="news__title">
-  {n?.title && n.title.length > 20 /* Adjust the character limit as needed */
-    ? `${n.title.substring(0, 20)}...`
-    : n?.title}
-</a>
-
+                      <a className="news__title">
+                        {n?.title &&
+                        n.title.length >
+                          20 /* Adjust the character limit as needed */
+                          ? `${n.title.substring(0, 20)}...`
+                          : n?.title}
+                      </a>
                     </div>
 
                     <p className="news__txt">
@@ -141,8 +144,8 @@ const News = () => {
   );
 };
 
-const FormattedDate = ({ createdAt }) => {
-  const date = new Date(createdAt);
+const FormattedDate = ({ dateOfLaunch }) => {
+  const date = new Date(dateOfLaunch);
   const dateString = date.toString();
   const dateArray = dateString.split(" ");
   const day = dateArray[2];
