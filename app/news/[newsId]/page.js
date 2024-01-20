@@ -76,7 +76,7 @@ const NewsPageDetail = () => {
             <div className="md:col-span-2 col-span-12">
               <div className="px-6 flex justify-center items-center font-semibold">
                 {/* Posted date */}
-                <FormattedDate createdAt={news?._createdAt} />
+                <FormattedDate launchAt={news?.launchAt} />
               </div>
             </div>
             <div className="md:col-span-10 col-span-12">
@@ -105,7 +105,7 @@ const NewsPageDetail = () => {
               </div>
               <div className="p-4">
                 {/* Date posted */}
-                <OtherFormattedDate createdAt={news?._createdAt} />
+                <OtherFormattedDate launchAt={news?.launchAt} />
 
                 <div>
                   {/* Title */}
@@ -133,8 +133,8 @@ const NewsPageDetail = () => {
 };
 
 // You can format the date data however you like
-const FormattedDate = ({ createdAt }) => {
-  const date = new Date(createdAt);
+const FormattedDate = ({ launchAt }) => {
+  const date = new Date(launchAt);
   const dateString = date.toString();
   const dateArray = dateString.split(" ");
   const day = dateArray[2];
@@ -149,8 +149,8 @@ const FormattedDate = ({ createdAt }) => {
 };
 
 // You can format the date data however you like
-const OtherFormattedDate = ({ createdAt }) => {
-  const date = new Date(createdAt);
+const OtherFormattedDate = ({ launchAt }) => {
+  const date = new Date(launchAt);
   const dateString = date.toString();
   const dateArray = dateString.split(" ");
   const day = dateArray[2];

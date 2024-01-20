@@ -10,7 +10,8 @@ export const getAllNews = async () => {
                 url
             }
         },
-        _createdAt
+        _createdAt,
+        launchAt
     }`;
 
   const news = await sanityClient.fetch(query);
