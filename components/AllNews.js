@@ -44,13 +44,13 @@ const AllNews = () => {
               </motion.div>
             </div>
           </div>
-          <motion.div variants={staggerContainer}
+          <div
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }} className="flex flex-col gap-4 font-raleway max-w-[1100px] w-full mx-auto px-5 py-10">
             {/* Blog cards */}
             {news.map((n) => (
-              <motion.div
+              <div
                 className="flex flex-col md:flex-row items-center justify-between gap-4 bg-slate-200 cursor-pointer p-5 rounded-2xl"
                 onClick={() => router.push(`/news/${n._id}`)}
                 key={n?._id}
@@ -84,9 +84,9 @@ const AllNews = () => {
                     </p>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             ))}
-          </motion.div>
+          </div>
         </div>
       )}
     </div>

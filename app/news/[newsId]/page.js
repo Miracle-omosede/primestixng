@@ -52,7 +52,7 @@ const NewsPageDetail = () => {
 
           {/* News Title */}
           <div className="justify-center flex flex-col items-center">
-            <h1 className="capitalize font-[800] text-center text-5xl text-slate-900 px-5 md:px-0">
+            <h1 className="capitalize font-[800] text-center text-3xl md:text-5xl text-slate-900 px-5 md:px-0">
               {news?.title}
             </h1>
             <span className="text-slate-800 font-semibold text-center w-full">5 MINS READ</span>
@@ -82,7 +82,7 @@ const NewsPageDetail = () => {
             <div className="md:col-span-10 col-span-12">
               {/* Post body */}
               <div className="w-full px-6 mt-4">
-                <p className="text-xl md:text-left text-center">
+                <p className="text-xl md:text-left text-justify">
                   {news?.body}
                 </p>
               </div>
