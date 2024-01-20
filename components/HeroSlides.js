@@ -17,10 +17,10 @@ export default function HeroSlider() {
   return (
     <>
       <Carousel
-      prevArrow={(false)}
-      nextArrow={(false)}
-      autoplay={(true)}
-      loop={(true)}
+        prevArrow={false}
+        nextArrow={false}
+        autoplay={true}
+        loop={true}
         // prevArrow={({ handlePrev }) => (
         //   <IconButton
         //     variant="text"
@@ -102,14 +102,14 @@ export default function HeroSlider() {
                 variants={textVariant(1.1)}
                 className="uppercase font-bold text-5xl text-left z-10"
               >
-                 Design
+                Design
               </motion.h1>
               <motion.p
                 variants={textVariant(1.2)}
                 className="md:text-2xl  z-10 md:w-full w-[70%]"
               >
-                We elevate every project with innovative
-and aesthetic brilliance, ensuring a unique and captivating experience.
+                We elevate every project with innovative and aesthetic
+                brilliance, ensuring a unique and captivating experience.
               </motion.p>
               <Button className="z-10" />
             </motion.div>
@@ -144,9 +144,13 @@ and aesthetic brilliance, ensuring a unique and captivating experience.
           <div className="home__shadow"></div>
         </div>
         <div className="h-full w-full relative">
-        <video autoPlay loop muted playsInline className="background-clip">
-            <source src="/automationvideo.mp4" className="w-full h-full absolute top-0 left-0" type="video/mp4"></source>
-        </video>
+          <video autoPlay loop muted playsInline className="background-clip">
+            <source
+              src="/automationvideo.mp4"
+              className="w-full h-full absolute top-0 left-0"
+              type="video/mp4"
+            ></source>
+          </video>
           {/* <Image
             alt=""
             className="slightly-zoomed-image object-cover"
@@ -165,15 +169,14 @@ and aesthetic brilliance, ensuring a unique and captivating experience.
                 variants={textVariant(1.1)}
                 className="uppercase font-bold text-5xl text-left"
               >
-                 Automate
+                Automate
               </motion.h1>
               <motion.p
                 variants={textVariant(1.2)}
                 className="md:text-2xl  text-left md:w-full w-[70%]"
               >
-                We embrace cutting-edge technology
-and streamlined processes to enhance efficiency.
-               
+                We embrace cutting-edge technology and streamlined processes to
+                enhance efficiency.
               </motion.p>
               <Button className="z-10" />
             </motion.div>
@@ -232,9 +235,9 @@ and streamlined processes to enhance efficiency.
                 variants={textVariant(1.2)}
                 className="md:text-2xl  md:w-full w-[70%] "
               >
-                We challenge norms and push boundaries to
-create groundbreaking solutions, setting new benchmarks and unleashing a
-new era in real estate construction.
+                We challenge norms and push boundaries to create groundbreaking
+                solutions, setting new benchmarks and unleashing a new era in
+                real estate construction.
               </motion.p>
               <Button className="z-10" />
             </motion.div>
