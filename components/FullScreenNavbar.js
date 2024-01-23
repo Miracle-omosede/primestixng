@@ -190,6 +190,23 @@ function MobileView({ open, setOpen }) {
               </div>
 
               <div className="md:hidden flex my-5">
+                <Link href="./news">
+                  <button
+                    className="flex items-center openModalBtn text-2xl"
+                    onClick={() => {
+                      setOpenModal(true);
+                    }}
+                  >
+                    <i className="ri-camera-lens-line"></i>
+                    &nbsp;
+                    <span className="uppercase font-bold">
+                      Media
+                    </span>
+                  </button>
+                </Link>
+              </div>
+
+              <div className="md:hidden flex my-5">
                 <Link href="./enquire">
                   <button
                     className="flex items-center openModalBtn text-2xl"
