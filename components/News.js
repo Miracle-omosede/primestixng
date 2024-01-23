@@ -27,9 +27,13 @@ const News = () => {
 
   useEffect(() => {
     const fetchNews = async () => {
-      const data = await getAllNews();
-      // console.log(data);
-      setNews(data);
+      try {
+        const data = await getAllNews();
+        const sortedNews = data.sort((a, b) => new Date(b.launchAt) - new Date(a.launchAt));
+        setNews(sortedNews);
+      } catch (error) {
+        console.error("Error fetching news:", error);
+      }
     };
 
     fetchNews();
