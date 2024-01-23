@@ -18,18 +18,15 @@ const AllNews = () => {
     const fetchNews = async () => {
       try {
         const data = await getAllNews();
-        console.log(data);
-        setNews(data);
+        const sortedNews = data.sort((a, b) => new Date(b.launchAt) - new Date(a.launchAt));
+        setNews(sortedNews);
       } catch (error) {
         console.error("Error fetching news:", error);
       }
     };
 
-    
-
     fetchNews();
   }, []);
-
   return (
     <div>
       {news && (
