@@ -194,10 +194,13 @@ const Footer = () => {
             </div>
 
             <div className="md:text-4xl text-xl my-4 flex items-start justify-start gap-4">
-              <i className="ri-facebook-box-line"></i>
-              <i className="ri-twitter-x-line"></i>
-              <i className="ri-linkedin-box-fill"></i>
-              <i className="ri-youtube-fill"></i>
+              
+              <a href="https://www.facebook.com/profile.php?id=61550898563148&mibextid=LQQJ4d " target="_blank"><i className="ri-facebook-box-line"></i></a>
+              <a href="https://x.com/primestixng?s=20" target="_blank"><i className="ri-twitter-x-line"></i></a>
+              <a href="https://www.instagram.com/primestixng?igsh=MXV1aW8xOGZnZTBwNA== " target="_blank"><i className="ri-instagram-line"></i></a>
+              <a href="https://www.instagram.com/primestixng?igsh=MXV1aW8xOGZnZTBwNA== " target="_blank"><i className="ri-youtube-fill"></i></a>
+              
+              
             </div>
 
             <div className="flex gap-2 font-bold">
