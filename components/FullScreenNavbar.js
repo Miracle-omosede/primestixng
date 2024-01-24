@@ -127,7 +127,7 @@ function MobileView({ open, setOpen }) {
                       onClick={() => {
                         setOpen(!open);
                       }}
-                      href="/"
+                      href="#"
                       className="mobile-headings"
                     >
                       <span>
@@ -189,8 +189,8 @@ function MobileView({ open, setOpen }) {
                 </div>
               </div>
 
-              <div className="md:hidden flex my-5">
-                <Link href="./news">
+              <div className="md:hidden flex flex-col my-5">
+                <Link href="#">
                   <button
                     className="flex items-center openModalBtn text-2xl"
                     onClick={() => {
@@ -204,6 +204,19 @@ function MobileView({ open, setOpen }) {
                     </span>
                   </button>
                 </Link>
+                <ul className="mobile-list flex gap-2 flex-col">
+                      <li>
+                        <Link
+                          onClick={() => {
+                            setOpen(!open);
+                          }}
+                          href="/news"
+                          className="link-item"
+                        >
+                          News
+                        </Link>
+                      </li>
+                    </ul>
               </div>
 
               <div className="md:hidden flex my-5">
