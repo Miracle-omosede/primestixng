@@ -28,7 +28,7 @@ import { getAllProjects } from "@/actions/getAllProjects";
 
 const FeaturedImages = () => {
   const [projects, setProjects] = useState([]);
-
+  
   useEffect(() => {
     const fetchProjects = async () => {
       let data = await getAllProjects();

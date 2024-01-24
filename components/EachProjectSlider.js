@@ -23,7 +23,7 @@ import {
 } from "@/utils/motion";
 
 // import required modules
-import { Autoplay, Pagination, Navigation, EffectFade } from "swiper/modules";
+import { Autoplay, Pagination, Navigation,  } from "swiper/modules";
 import Image from "next/image";
 import Recents from "./Recents";
 import { getLatestFeatured } from "@/actions/getLatestFeatured";
@@ -31,7 +31,6 @@ import { formatLocation } from "@/lib/helpers";
 import { getAllCommunityProjects } from "@/actions/getAllProjectsInCommunity";
 
 const EachProjectSlider = ({ project, index }) => {
-  
   // Please check why the progress Circle is not working
   console.log(project?.gallery);
 
@@ -57,7 +56,7 @@ const EachProjectSlider = ({ project, index }) => {
           }}
           effect={"fade"}
           navigation={false}
-          modules={[EffectFade, Autoplay, Pagination, Navigation]}
+          modules={[Autoplay, Pagination, Navigation]}
           className="mySwiper"
         >
           {project?.gallery?.map((projectGalleryImage, i) => (
@@ -75,51 +74,68 @@ const EachProjectSlider = ({ project, index }) => {
                   alt=""
                 />
                 <div className="home__overlay2"></div>
-                <motion.div className="w-full text-left absolute bottom-0 font-raleway text-white flex flex-col" variants={staggerContainer}
-                      initial="hidden"
-                      whileInView="show"
-                      viewport={{ once: false, amount: 0.25 }} >
+                <motion.div
+                  className="w-full text-left absolute bottom-0 font-raleway text-white flex flex-col"
+                  variants={staggerContainer}
+                  initial="hidden"
+                  whileInView="show"
+                  viewport={{ once: false, amount: 0.25 }}
+                >
                   <div className="px-5">
-                    <motion.h1 variants={textVariant(1.1)} className="text-3xl font-[600]">{project?.name}.</motion.h1>
+                    <motion.h1
+                      variants={textVariant(1.1)}
+                      className="text-3xl font-[600]"
+                    >
+                      {project?.name}.
+                    </motion.h1>
                     {/* sub-heading */}
-                    <motion.h2 variants={textVariant(1.2)} className="font-[300] flex items-center tracking-wider">
-                    <span className="flex">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            strokeWidth={1.5}
-                            stroke="currentColor"
-                            className="w-6 h-6"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
-                            />
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
-                            />
-                          </svg>
-                        </span>
-                     <span>
-                     {formatLocation(
-                        project?.city?.name,
-                        project?.country?.name
-                      )}
-                     </span>
+                    <motion.h2
+                      variants={textVariant(1.2)}
+                      className="font-[300] flex items-center tracking-wider"
+                    >
+                      <span className="flex">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth={1.5}
+                          stroke="currentColor"
+                          className="w-6 h-6"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                          />
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                          />
+                        </svg>
+                      </span>
+                      <span>
+                        {formatLocation(
+                          project?.city?.name,
+                          project?.country?.name
+                        )}
+                      </span>
                     </motion.h2>
-                    <motion.p variants={textVariant(1.3)} className="text-sm w-full font-raleway py-2 font-[500]">
-  {project?.description && project?.description.length > 150
-    ? `${project.description.substring(0, 150).trim()}...`
-    : project?.description}
-</motion.p>
+                    <motion.p
+                      variants={textVariant(1.3)}
+                      className="text-sm w-full font-raleway py-2 font-[500]"
+                    >
+                      {project?.description && project?.description.length > 150
+                        ? `${project.description.substring(0, 150).trim()}...`
+                        : project?.description}
+                    </motion.p>
                   </div>
 
                   <div className="divider w-full bg-[#AD8F31] h-[1px]"></div>
-                  <motion.div className="w-full font-raleway px-5" variants={textVariant(1.4)}>
+                  <motion.div
+                    className="w-full font-raleway px-5"
+                    variants={textVariant(1.4)}
+                  >
                     <Link
                       href={`/projects/${project._id}`}
                       className="w-full flex items-center justify-between py-3"
