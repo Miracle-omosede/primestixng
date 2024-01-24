@@ -124,9 +124,6 @@ function MobileView({ open, setOpen }) {
                 <div className="flex flex-col md:flex-row justify-between w-full pr-16">
                   <div>
                     <Link
-                      onClick={() => {
-                        setOpen(!open);
-                      }}
                       href="#"
                       className="mobile-headings"
                     >
