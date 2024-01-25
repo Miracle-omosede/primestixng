@@ -221,7 +221,7 @@ function MobileView({ open, setOpen }) {
                   <button
                     className="flex items-center openModalBtn text-2xl"
                     onClick={() => {
-                      setOpenModal(true);
+                      setOpen(!open);
                     }}
                   >
                     <i className="ri-calendar-2-line"></i>
