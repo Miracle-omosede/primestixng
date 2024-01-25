@@ -75,7 +75,7 @@ const EachProjectSlider = ({ project, index }) => {
                 />
                 <div className="home__overlay2"></div>
                 <motion.div
-                  className="w-full text-left absolute bottom-0 font-raleway text-white flex flex-col"
+                  className="w-full text-left absolute bottom-0 font-raleway text-white flex flex-col my-[10px]"
                   variants={staggerContainer}
                   initial="hidden"
                   whileInView="show"
